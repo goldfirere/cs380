@@ -34,7 +34,8 @@ Lecture Recordings:            at [Tegrity](TODO)
 Lab:                           W 11:10-12:30
 Lab Room:                      Park 231
 Website:                       <http://cs.brynmawr.edu/cs380>
-Mailing list:                  [cs380-sp17@lists.cs.brynmawr.edu](mailto:cs380-sp17@lists.cs.brynmawr.edu)
+GitHub Repo:                   <https://github.com/goldfirere/cs380>
+Mailing List:                  [cs380-sp17@lists.cs.brynmawr.edu](mailto:cs380-sp17@lists.cs.brynmawr.edu)
 ----------------------         -----------------------------------------------------------------------------------------------------------------------------------------
 
 </div>
