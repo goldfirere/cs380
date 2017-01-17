@@ -1,5 +1,5 @@
 body {
-    background-color: #FFFBED; /* light BlanchedAlmond */  /* TODO */
+    background-color: #f1daf1;  /* light plum */
     font-family: Verdana, Arial, Helvetica, sans-serif;
     font-size: 14px;
     color: #000000;
@@ -16,9 +16,9 @@ div#navbar {
 }
 
 span#navbarspan {
-    background-color: #FFEBCD;
+    background-color: #e4b4e4;
     padding: 3px 10px;
-    border: solid 1px #DEB887;
+    border: solid 1px #963696;
 }
 
 #navbar a {

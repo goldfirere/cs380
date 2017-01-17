@@ -50,21 +50,21 @@ tr:nth-child(1) td p {
 
 .odd td:nth-last-child(2) {
     border-top: none;
-    background-color:  #FAFAD2;
+    background-color:  #f9d2f9; /* light violet */
 }
 
 .even {
-    background-color:#FAFAD2;
+    background-color:#f9d2f9;
 }
 
 .odd {
-    background-color: #FFEBCD;
+    background-color: #f6bcf6;
 }
 
 tr:nth-child(1) {
-        background-color: #fff8dc;
+        background-color: #fce9fc;
 }
 
 tr:nth-child(1) td:nth-last-child(2) {
-    background-color: #fff8dc;
+    background-color: #fce9fc;
 }

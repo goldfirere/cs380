@@ -30,12 +30,12 @@ Office Hours:                  Tuesdays 2:30-3:30, Wednesdays 1:15-2:30.
 <span class="strut" />
 Lecture:                       MW 9:40-11:00
 Lecture Room:                  Park 336
-Lecture Recordings:            at [Tegrity](TODO)
+Lecture Recordings:            at [Tegrity](https://brynmawr.tegrity.com/#/course/b3842132-b03d-41bd-8064-3cf741138497)
 Lab:                           W 11:10-12:30
 Lab Room:                      Park 231
 Website:                       <http://cs.brynmawr.edu/cs380>
 GitHub Repo:                   <https://github.com/goldfirere/cs380>
-Mailing List:                  [cs380-sp17@lists.cs.brynmawr.edu](mailto:cs380-sp17@lists.cs.brynmawr.edu)
+Mailing List:                  [cs380-sp17@lists.cs.brynmawr.edu][mailing-list]
 ----------------------         -----------------------------------------------------------------------------------------------------------------------------------------
 
 </div>
@@ -101,14 +101,28 @@ There is no required textbook for this course. Below are several resources you m
 find helpful while learning Haskell; however, none of them dive into the type
 system the way we will in this course.
 
-* **Haskell from First Principles** TODO
+* **Haskell from First Principles**, by Christopher Allen and Julie Moronuki. This comprehensive
+book has been the multi-year effort of two prominent Haskell educators, who have refined the
+presentation of Haskell in this book as they have taught many classes of students. This was nearly
+the selected textbook for this course, but it does not have enough on Haskell's advanced type system
+features for this course. I recommend it as a companion text, however.
+The book is currently
+online-only (for \$\$59), available at <http://haskellbook.com/>.
 
-* **Real World Haskell** TODO
+* **Real World Haskell**, by Bryan O'Sullivan, Don Stewart, and John Goerzen. This book
+has been a standard text for learning Haskell for some time, but it is now somewhat out
+of date. I learned Haskell from this book. It is available for free online at
+<http://book.realworldhaskell.org/>.
 
-* **Learn You a Haskell for Great Good** TODO
+* **Learn You a Haskell for Great Good**, by Miran Lipova&#269;a. This is another, slightly
+outdated book on learning Haskell. It is also free online at <http://learnyouahaskell.com/>.
 
-* Steven Diehl's page TODO
+* Stephen Diehl has written a comprehensive page covering all kinds of Haskell goodies at
+<http://dev.stephendiehl.com/hask/>.
 
-* bitemyapp's page TODO
+* Lots of tutorials are available at <https://www.schoolofhaskell.com/>.
 
+It can be hard to sort through all of this. If you find a tidbit (individual chapter of a book,
+tutorial, etc.) that you find helpful, [tell us all][mailing-list].
 
+[mailing-list]: mailto:cs380-sp17@lists.cs.brynmawr.edu
