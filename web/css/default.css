@@ -1,0 +1,60 @@
+body {
+    background-color: #FFFBED; /* light BlanchedAlmond */  /* TODO */
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #000000;
+}
+
+#header {
+    text-align: center;
+    font-size: 150%;
+}
+
+
+div#navbar {
+    text-align: center;
+}
+
+span#navbarspan {
+    background-color: #FFEBCD;
+    padding: 3px 10px;
+    border: solid 1px #DEB887;
+}
+
+#navbar a {
+    margin: 0px 10px;
+}
+
+h1 {
+    font-size: 125%;
+    font-weight: bold;
+    border-top: thin solid #000000;
+}
+
+h2 {
+    font-size: 100%;
+    font-weight: bold;
+}
+
+span.strut {
+    display: block;
+    height: 1em;
+}
+
+div#footer {
+    text-align: center;
+    font-size: 80%;
+}
+
+/* Code highlighting */
+.sourceCode .co { /* comments */
+    color: #B8860B;
+}
+
+.c .kw { /* keyword */
+    color: #008800;
+}
+
+.c .dt { /* data type */
+    color: #ff8c00; /* DarkOrange */
+}

@@ -1,0 +1,6 @@
+_cache
+_site
+*.o
+*.hi
+*.dyn_o
+*.dyn_hi

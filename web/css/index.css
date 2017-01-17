@@ -1,0 +1,31 @@
+img#knking {
+    float: right;
+    width: 200px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+div#info_table {
+    padding-left: 5px;
+}
+
+div#info_table td:first-of-type {
+    font-weight: bold;
+}
+
+div#goals ul {
+    margin-top: -1em;
+}
+
+div#materials {
+    margin-right: 200px;
+    padding-right: 20px;
+}
+
+hr#footer_hr {
+    clear: both;
+}
+
+#extra-challenges {
+    clear: both;
+}
