@@ -1,0 +1,14 @@
+Modern functional programming
+-----------------------------
+
+Simplify your language and free your mind. This course will cover an alternative
+style of programming: typed functional programming. Typed functional programming languages
+are quickly gaining currency in industry, including at Google, Facebook, a variety of
+financial services companies, and across a range of startups. They are particularly
+good at maintaining security guarantees and for writing concurrent programs.
+This course will explore
+the ease and wonder of typed functional programming through one such language: Haskell.
+We will cover higher-order functions,
+purity, generalized algebraic datatypes, type inference, laziness, monads, and more.
+Once you have used these techniques, programming will never feel the same again.
+Prerequisites: CMSC B206 or H106, and MATH/CMSC 231.

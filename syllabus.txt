@@ -1,0 +1,77 @@
+MW 9:40-11:00
+W lab after class
+
+1 W 1/18: Introduction to Haskell
+  - purity
+  - functional programming
+  - types types types
+  - history of Haskell / use today
+  - my role in Haskell
+  - type inference
+  - evaluation model
+  - laziness
+  - GHCi
+
+L1: Finger exercises (Wilmington charter?)
+
+2 M 1/23: Functional programming
+ - higher-order functions
+ - simple numerical bits and bobs
+ - lists
+ - map
+
+3 W 1/25: Functional programming
+ - fold
+
+L2: listy exercises
+
+4 M 1/30: Functional, lazy programming
+ - repeat
+ - iterate
+ - pure functional data structures
+
+5 W 2/1: Algebraic datatypes
+
+RAE: Proofs??
+
+L2: listy exercises, ADT exercises (trees)
+
+6 M 2/6: Parameterized datatypes, parametric polymorphism
+
+7 W 2/8: Type classes (Monoid, Functor)
+
+RAE: QuickCheck??
+
+L3: Type classes
+
+8 M 2/13: Type classes (Num, write-your-own)
+
+9 W 2/15: GADTs, TypeRep
+
+10 M 2/20: GADTs, Red-Black Trees
+
+11 W 2/22: Red-black trees
+
+12 M 2/27: Review
+
+13 W 3/1: Test
+
+14 M 3/13: Monads
+
+15 W 3/15: I/O
+
+16 M 3/20: Other monads
+
+17 W 3/22: Concurrency
+
+18 M 3/27: Concurrency & efficiency
+
+19 W 3/29: Dependent types in Agda; quiz
+
+20 M 4/3: Agda
+
+21 W 4/5: Agda
+
+22 M 4/10: Dependent types in Haskell
+
+23 W 4/12 - end of semester: Applications (parsing? Gloss? type inference?)

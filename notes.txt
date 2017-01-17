@@ -1,0 +1,35 @@
+
+Chris Okasaki email dated 3/21/16 about giving a guest lecture
+
+Bill MacKenty recommended c9.io (cloudnine) as a good web-based IDE. Could this be a platform for 380? Perhaps.
+
+"technical thoughts on stack" thread (Sep 2016) includes posts by Michael Snoyman explaining how to use stack to install a system GHC. This may be useful for students.
+
+Can I incorporate real papers? Perhaps functional pearls. (Yorgey's monoids paper? Comonads paper?)
+
+Use GHC-vis: http://felsin9.de/nnis/ghc-vis/
+  http://www.joachim-breitner.de/publications/haskell_bytes_portland_2014-06-13.pdf
+  https://vimeo.com/100166511
+  --> This is pretty awesome. Especially for infinite data structures
+
+Also, consider:
+ - iHaskell
+ - Intero (<-- Emacs plugin that's supposedly good. Needs stack. But that's probably OK.)
+ - HyperHaskell
+ - Diagrams
+ - Gloss
+
+
+Assignments might be stolen from http://www.scs.stanford.edu/16wi-cs240h/
+ - also look at cis194, cis552, cis120, CMU ML courses, conor's courses, and beyond
+
+from https://www.reddit.com/r/haskell/comments/5m0bj8/what_did_you_wish_you_had_known_about_in_the/
+  - parenthesize type signatures
+  - specialize class-constrained types
+
+
+
+Use learn.hfm.io, Gabi and Manuel's tutorial for Haskell For Mac.
+
+
+Brent's PL course may be relevant: http://ozark.hendrix.edu/~yorgey/360/f16/

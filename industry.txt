@@ -1,0 +1,21 @@
+Some companies that use Haskell
+
+Facebook: Haxl, spam detection. SCW thinks they use it to manipulate PHP AST
+
+Google: Google X. Talk to Wren to learn more.
+
+Standard Chartered: Mu compiler. Mu.
+
+GitHub: Contact Rob Rix
+
+skedge.me
+
+Awake networks
+
+Soostone
+
+Sumall
+
+unionize.me
+
+HACCMS
