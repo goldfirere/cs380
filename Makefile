@@ -1,7 +1,12 @@
-PDFS := $(wildcard ??/*.tex)
+TEXS := $(wildcard [0-9][0-9]_*/*.tex)
+PDFS := $(TEXS:%.tex=%.pdf)
 
 default:
 	@echo "Choose what to make."
+
+test:
+	echo $(TEXS)
+	echo $(PDFS)
 
 web: hakyll/site $(PDFS)
 	hakyll/site build
@@ -14,12 +19,12 @@ hakyll/site: hakyll/*.hs
 	ghc --make hakyll/site.hs
 
 %.pdf: %.tex
-	cd $(dir $*); latexmk -pdf $*
+	cd $(dir $*); latexmk -pdf $(notdir $*)
 
 clean:
 	rm -rf _cache _site
 	rm -rf hakyll/*.{o,hi,dyn_o,dyn_hi}
-	rm -rf ??/*.{aux,log,out,bbl,blg,ptb,fls,fdb_latexmk,synctax.gz}
+	rm -rf [0-9][0-9]_*/*.{aux,log,out,bbl,blg,ptb,fls,fdb_latexmk,synctex.gz}
 	rm -rf $(PDFS)
 
 deploy:

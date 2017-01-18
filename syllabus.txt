@@ -12,13 +12,13 @@ W lab after class
   - laziness
   - GHCi
 
-L1: Finger exercises (Wilmington charter?)
+L1: Finger exercises (Wilmington charter)
 
 2 M 1/23: Functional programming
  - higher-order functions
- - simple numerical bits and bobs
  - lists
  - map
+ - unit tests
 
 3 W 1/25: Functional programming
  - fold
