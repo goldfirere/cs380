@@ -1,0 +1,64 @@
+\documentclass{article}
+
+\usepackage{fullpage}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{multicol}
+
+\begin{document}
+
+\begin{center}
+\bf
+CS380: Modern Functional Programming\\
+Prof. Richard Eisenberg\\
+Spring 2017\\[1ex]
+Types in Math
+\end{center}
+
+Consider the definitions below. Which of the mathematical phrases make sense?
+
+\begin{align*}
+x_1 &= 5 & x_2 &= -3\\
+z_1 &= 3 + 4i & z_2 &= 2 - i\\
+A_1 &= \{1, 2, 3\} & A_2 &= \{8\}\\
+f_1(x) &= x^2 + 7 & f_2(x) &= |x|\\
+g_1(x,y) &= x - y^2 & g_2(x,y) &= xy
+\end{align*}
+\begin{align*}
+M &= [\begin{array}{@{}ccccc@{}} 2 & 3 & 5 & 7 & 11 \end{array}]\\
+N &= \left[\begin{array}{@{}c@{}} 3 \\ 1 \\ 4 \\ 1 \\ 5 \end{array}\right]\\
+\end{align*}
+
+\begin{multicols}{2}
+\begin{enumerate}
+\item $x_1 + x_2$
+\item $x_1 + z_2$
+\item $x_1 + A_1$
+\item $f_1(x_2)$
+\item $f_2(z_1)$
+\item $g_1(x_1)$
+\item $x_2 M$
+\item $x_2 \in A_1$
+\item $A_1 \in x_2$
+\item $f_1(f_2(x_1))$
+\item $f_2 \circ f_1$ (where $\circ$ is function composition)
+\item $g_1(x_1,x_2)$
+\item $g_2(z_1,z_2)$
+\item $g_2 \circ g_1$
+\item $x_1 > x_2$
+\item $z_1 > z_2$
+\item $|x_1|$
+\item $|z_1|$
+\item $|A_1|$
+\item $|f_1|$
+\item $|M|$
+\item $M N$
+\item $N M$
+\item $g_2(M,N)$
+\item $|M N|$
+\item $|N M|$
+\end{enumerate}
+\end{multicols}
+
+
+\end{document}

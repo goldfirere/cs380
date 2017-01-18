@@ -44,13 +44,17 @@ tr:nth-child(1) td p {
     margin-top: 10px;
 }
 
-.even td:nth-last-child(2) {
+.odd td:nth-last-child(2) {
     border-bottom: none;
+    background-color:  #f9d2f9; /* light violet */
 }
 
-.odd td:nth-last-child(2) {
+tr:nth-child(1) td:nth-last-child(2) {
+    border-bottom: 1px solid black;
+}
+
+.even td:nth-last-child(2) {
     border-top: none;
-    background-color:  #f9d2f9; /* light violet */
 }
 
 .even {

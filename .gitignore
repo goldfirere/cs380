@@ -4,3 +4,6 @@ _site
 *.hi
 *.dyn_o
 *.dyn_hi
+*.log
+*.out
+*.aux

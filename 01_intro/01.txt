@@ -1,0 +1,26 @@
+I. Introductions
+II. Haskell
+III. Types
+IV. Course Structure & Philosophy
+V. Lab
+
+Intro (9:40-9:50)
+
+Haskell (9:50-10:20)
+ - silent board activity
+ - history of Haskell
+ - my role in Haskell
+ - types
+ - type inference
+ - purity (w/ example)
+ - recursion
+   - sumDigits
+   - triangleNumber
+   - printToN
+ - higher-order functions
+   - twice
+   - nTimes
+
+Types (10:20-10:45)
+ - types in math
+ - types in Haskell

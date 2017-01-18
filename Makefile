@@ -1,7 +1,9 @@
+PDFS := $(wildcard ??/*.tex)
+
 default:
 	@echo "Choose what to make."
 
-web: hakyll/site
+web: hakyll/site $(PDFS)
 	hakyll/site build
 
 rebuild: hakyll/site
@@ -11,9 +13,14 @@ hakyll/site: hakyll/*.hs
 	rm -rf _cache _site
 	ghc --make hakyll/site.hs
 
+%.pdf: %.tex
+	cd $(dir $*); latexmk -pdf $*
+
 clean:
 	rm -rf _cache _site
 	rm -rf hakyll/*.{o,hi,dyn_o,dyn_hi}
+	rm -rf ??/*.{aux,log,out,bbl,blg,ptb,fls,fdb_latexmk,synctax.gz}
+	rm -rf $(PDFS)
 
 deploy:
 	[[ -z `git status -s` ]]  # deploy only when committed

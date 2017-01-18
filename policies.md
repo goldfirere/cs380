@@ -65,14 +65,14 @@ this class. It includes participation, attendance, and engagement. I expect
 every student to contribute to the class environment, both to improve your own
 experience and to improve the experience of others. For example, you can be an
 active partner when working in groups, you can post on
-[GitHub](https://github.com/goldfirere/cs380/issues) (where we will host our
+[GitHub](https://github.com/bmc-cs380/cs380/issues) (where we will host our
 question-and-answer forum) or on our
 [mailing list](mailto:cs380-sp17@lists.cs.brynmawr.edu), you can raise your hand
 in class, and you can visit my [office hours](index.html) -- but there are
 other ways to contribute, as well.
 
 A fantastic way to contribute is to find ways to improve this material. Submit
-a [pull request](https://github.com/goldfirere/cs380/pulls) against the `cs380` repo!
+a [pull request](https://github.com/bmc-cs380/cs380/pulls) against the `cs380` repo!
 
 Quizzes
 -------
@@ -133,7 +133,7 @@ When you are working with a partner,
 both students get the same grade; naturally, the code you write is jointly yours,
 slightly overriding the boldface policies above.
 
-If you have a question, post on [GitHub](https://github.com/goldfirere/cs380/issues).
+If you have a question, post on [GitHub](https://github.com/bmc-cs380/cs380/issues).
 
 Installing Haskell
 ==================
@@ -150,7 +150,7 @@ GitHub
 
 This course will use [GitHub](http://github.com/) to host its question-and-answer
 forum. If you have a question on an assignment, please post
-[here](http://github.com/goldfirere/cs380/issues). If you look around, you will
+[here](http://github.com/bmc-cs380/cs380/issues). If you look around, you will
 also see that I host my own files used to run this course on GitHub. Feel free
 to look at any of the materials there; in particular, you might find my class notes
 (in the numbered folders) helpful. But be warned: these notes are written more for

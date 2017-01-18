@@ -34,7 +34,7 @@ Lecture Recordings:            at [Tegrity](https://brynmawr.tegrity.com/#/cours
 Lab:                           W 11:10-12:30
 Lab Room:                      Park 231
 Website:                       <http://cs.brynmawr.edu/cs380>
-GitHub Repo:                   <https://github.com/goldfirere/cs380>
+GitHub Repo:                   <https://github.com/bmc-cs380/cs380>
 Mailing List:                  [cs380-sp17@lists.cs.brynmawr.edu][mailing-list]
 ----------------------         -----------------------------------------------------------------------------------------------------------------------------------------
 
