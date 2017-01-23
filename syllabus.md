@@ -18,32 +18,32 @@ represents my aims.
 +---+-----+--------------------+----------------+----------------+--------------------+--------------------+------------------+
 |\# |Date |Topic               | Reading        |Examples        |  Assignments       |   Labs             |  Extras          |
 +---+-----+--------------------+----------------+----------------+--------------------+--------------------+------------------+
-|1  |1/18 | * Introductions    | Chapters 1-3, 5|                |                    |  [Lab 1]\: Basic   | [Types in Math]  |
-|   |     | * Functional       |at              |                |                    |Haskell             |                  |
+|1  |1/18 | * Introductions    | Chapters 1-3, 5| [Intro.hs] from|                    |  [Lab 1]\: Basic   | [Types in Math]  |
+|   |     | * Functional       |at              |class           |                    |Haskell             |                  |
 |   |     |programming         |[learn.hfm.io]  |                |                    |                    |                  |
 |   |     | * Types            |                |                |                    |                    |                  |
 |   |     |                    |                |                |                    |                    |                  |
 |   |     |                    |                |                |                    |                    |                  |
 |   |     |                    |                |                |                    |                    |                  |
 +---+-----+--------------------+----------------+----------------+--------------------+--------------------+------------------+
-| 2 |1/23 | * Higher-order     |                |                | Assignment 1 out   |                    |                  |
-|   |     |functions           |                |                |                    |                    |                  |
-|   |     | * Parametric       |                |                |                    |                    |                  |
-|   |     |polymorphism        |                |                |                    |                    |                  |
-|   |     | * `Maybe`          |                |                |                    |                    |                  |
+| 2 |1/23 | * Higher-order     | * The [Haskell |                | [Assignment 1] out |                    | [Higher-order    |
+|   |     |functions           |Report], Ch. 1, |                |                    |                    |functions]        |
+|   |     | * Parametric       |Sec. 2.7        |                |                    |                    |                  |
+|   |     |polymorphism        | * [Sections]   |                |                    |                    |                  |
 |   |     | * Lists            |                |                |                    |                    |                  |
 |   |     | * `map`            |                |                |                    |                    |                  |
-|   |     | * Unit testing     |                |                |                    |                    |                  |
+|   |     |                    |                |                |                    |                    |                  |
+|   |     |                    |                |                |                    |                    |                  |
 +---+-----+--------------------+----------------+----------------+--------------------+--------------------+------------------+
 | 3 |1/25 | * Folds            |                |                |                    |  Lab 2:            |                  |
 |   |     |(catamorphisms)     |                |                |                    |Higher-order        |                  |
-|   |     |                    |                |                |                    |programming         |                  |
+|   |     | * Unit testing     |                |                |                    |programming         |                  |
 |   |     |                    |                |                |                    |                    |                  |
 +---+-----+--------------------+----------------+----------------+--------------------+--------------------+------------------+
-| 4 |1/30 | * Algebraic data   |                |                | Assignment 1 due   |                    |                  |
+| 4 |1/30 | * Algebraic data   |                |                | [Assignment 1] due |                    |                  |
 |   |     |types               |                |                |                    |                    |                  |
-|   |     | * Trees            |                |                | Assignment 2 out   |                    |                  |
-|   |     |                    |                |                |                    |                    |                  |
+|   |     | * Maybe            |                |                | Assignment 2 out   |                    |                  |
+|   |     | * Trees            |                |                |                    |                    |                  |
 |   |     |                    |                |                |                    |                    |                  |
 |   |     |                    |                |                |                    |                    |                  |
 |   |     |                    |                |                |                    |                    |                  |
@@ -173,3 +173,8 @@ represents my aims.
 [learn.hfm.io]: http://learn.hfm.io/
 [Types in math]: 01/types.pdf
 [Lab 1]: 01/Lab01.hs
+[Haskell Report]: https://wiki.haskell.org/Section_of_an_infix_operator
+[Sections]: https://wiki.haskell.org/Section_of_an_infix_operator
+[Assignment 1]: hw01/Intro.hs
+[Higher-order functions]: 02/exercises.pdf
+[Intro.hs]: 01/Intro.hs

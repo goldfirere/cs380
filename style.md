@@ -20,7 +20,8 @@ While these formatting rules may vary from place to place, they are essential
 for making your code readable and for enabling others to understand, use, and
 modify your code in the future.
 
-TODO: Link to longer style guide.
+[Here](https://github.com/tibbe/haskell-style-guide/blob/master/haskell-style.md) is
+a longer style guide, but I prefer 2 spaces instead of the 4 advocated there.
 
 Naming Conventions
 ------------------

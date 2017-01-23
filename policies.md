@@ -86,15 +86,31 @@ tooling (e.g., `ghci`).
 Exams
 -----
 
-TODO
-
-This course has three exams: two midterms on Feb. 16 and Mar. 30, as well
-as a self-scheduled final exam during the usual exams period.
+This course has two exams, on March 1 and on April 24.
 Exams will be open-book and
-open-note, but you will not be able to use a computer. Exams will *not*
-cover interacting with the command line.
+open-note, but you will not be able to use a computer.
 
 More details will be discussed as the exams approach.
+
+There will *not* be a final exam. Instead there will be a final project:
+
+Final project
+-------------
+
+Toward the end of the semester, you will propose and start a *final project*, where
+you will apply your newfound knowledge of functional programming and static typing
+to some useful (or entertaining, or demonstrative) end. We will discuss details as
+the final project gets closer.
+
+In order for us to learn from others' travails, we will have *final project presentations*
+during the exam period. (This is in lieu of a scheduled final exam and will appear on the
+College schedule as a final exam. It is *not* a final exam!) These presentations are *not*
+high-octane -- you will share what you've learned and show off some of your code. If you
+want a slide or two, that's great, but the focus will be on the code, not on the polish.
+
+You can choose to complete the final exam with up to one partner. Both students will work
+together on the entire project and receive the same grade. (You will see below that there
+is a three-assignment limitation to partners. This does *not* apply to the final project.)
 
 Late policy
 ===========
@@ -139,7 +155,7 @@ Installing Haskell
 ==================
 
 Installing the Haskell toolchain (mostly, `ghc` and `stack`) can sometimes be challenging.
-The instructions [here](TODO) may be helpful. (Note: Do **not** do `brew install ghc` on
+The instructions [here](fromhome.html) may be helpful. (Note: Do **not** do `brew install ghc` on
 a Mac. It is out of date.) This is why we have installed everything you need on `powerpuff`.
 While I can offer quick help in getting your personal machine working, it is not my
 or the department's responsibility to get the tools working on your own machines, given

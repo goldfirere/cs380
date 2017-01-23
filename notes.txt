@@ -21,7 +21,8 @@ Also, consider:
 
 
 Assignments might be stolen from http://www.scs.stanford.edu/16wi-cs240h/
- - also look at cis194, cis552, cis120, CMU ML courses, conor's courses, and beyond
+ - also look at cis194, cis552, cis120 (http://www.cis.upenn.edu/~cis120/archive/16sp/hw/hw??),
+   CMU ML courses, conor's courses, and beyond
 
 from https://www.reddit.com/r/haskell/comments/5m0bj8/what_did_you_wish_you_had_known_about_in_the/
   - parenthesize type signatures

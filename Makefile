@@ -1,14 +1,18 @@
 TEXS := $(wildcard [0-9][0-9]_*/*.tex)
-PDFS := $(TEXS:%.tex=%.pdf)
+LHSS := $(wildcard [0-9][0-9]_*/*.lhs)
+PDFS := $(TEXS:%.tex=%.pdf) $(LHSS:%.lhs=%.pdf)
+
+HWS = 01/Intro.hs
+STUBS = $(HWS:%=hw/%)
+
+FMTS = etc/rae.fmt
+
+LHS2TEX_PATH = ../etc:/Users/rae/.cabal/share/x86_64-osx-ghc-8.0.1/lhs2tex-1.19
 
 default:
 	@echo "Choose what to make."
 
-test:
-	echo $(TEXS)
-	echo $(PDFS)
-
-web: hakyll/site $(PDFS)
+web: hakyll/site $(PDFS) $(STUBS)
 	hakyll/site build
 
 rebuild: hakyll/site
@@ -21,11 +25,18 @@ hakyll/site: hakyll/*.hs
 %.pdf: %.tex
 	cd $(dir $*); latexmk -pdf $(notdir $*)
 
+%.tex: %.lhs $(FMTS)
+	cd $(dir $*); lhs2TeX --path=$(LHS2TEX_PATH) -o $(notdir $@) $(notdir $<)
+
+hw/%.hs: private/hw/%.hs
+	hpp -DSTUB $< $@
+
 clean:
 	rm -rf _cache _site
 	rm -rf hakyll/*.{o,hi,dyn_o,dyn_hi}
 	rm -rf [0-9][0-9]_*/*.{aux,log,out,bbl,blg,ptb,fls,fdb_latexmk,synctex.gz}
 	rm -rf $(PDFS)
+	rm -rf $(LHSS:%.lhs=%.tex)
 
 deploy:
 	[[ -z `git status -s` ]]  # deploy only when committed

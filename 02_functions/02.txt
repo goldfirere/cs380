@@ -1,0 +1,23 @@
+I. Questions
+II. Parametric Polymorphism
+
+Questions (9:40-10:00)
+  partial vs total
+  list vs tuple
+  layout
+  fusion -- chaining listy operations
+  reductions -- order doesn't matter when you're pure
+    map (\x -> x + 1) [1,2,3]
+  currying (right-association of arrows)
+
+Polymorphism (10:00-10:15)
+ - id
+ - length
+ - map
+ - type errors
+
+Exercises (10:15-10:45)
+Review (10:45-11:00)
+
+
+
