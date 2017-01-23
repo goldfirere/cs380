@@ -28,7 +28,7 @@ represents my aims.
 +---+-----+--------------------+----------------+----------------+--------------------+--------------------+------------------+
 | 2 |1/23 | * Higher-order     | * The [Haskell |                | [Assignment 1] out |                    | [Higher-order    |
 |   |     |functions           |Report], Ch. 1, |                |                    |                    |functions]        |
-|   |     | * Parametric       |Sec. 2.7        |                |                    |                    |                  |
+|   |     | * Parametric       |Sec. 2.7        |                | [Course survey]    |                    |                  |
 |   |     |polymorphism        | * [Sections]   |                |                    |                    |                  |
 |   |     | * Lists            |                |                |                    |                    |                  |
 |   |     | * `map`            |                |                |                    |                    |                  |
@@ -178,3 +178,4 @@ represents my aims.
 [Assignment 1]: hw01/Intro.hs
 [Higher-order functions]: 02/exercises.pdf
 [Intro.hs]: 01/Intro.hs
+[Course survey]: https://docs.google.com/forms/d/e/1FAIpQLScwTPjvehHXtIR0j14ygq_72_ZULOFhajYMp_d79621bT1lRA/viewform
