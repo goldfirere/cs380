@@ -173,7 +173,7 @@ represents my aims.
 [learn.hfm.io]: http://learn.hfm.io/
 [Types in math]: 01/types.pdf
 [Lab 1]: 01/Lab01.hs
-[Haskell Report]: https://wiki.haskell.org/Section_of_an_infix_operator
+[Haskell Report]: https://www.haskell.org/onlinereport/haskell2010/
 [Sections]: https://wiki.haskell.org/Section_of_an_infix_operator
 [Assignment 1]: hw01/Intro.hs
 [Higher-order functions]: 02/exercises.pdf

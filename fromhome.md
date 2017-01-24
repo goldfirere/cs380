@@ -47,6 +47,27 @@ will then have command-line access to the CS server, from where you can run
 When you need to copy files back and forth between your machine and the
 server, you can use `scp`.
 
+An alternative approach here is to `sshfs`, which allows you to access your networked home
+directory as if it were local. First, install [FUSE for MacOS](https://osxfuse.github.io/),
+and then install `sshfs` (available on that same page). Once installed, you can mount your networked home directory
+locally:
+
+1. Create an empty directory anywhere. To be concrete, I'll make one called `cs` in my home directory with
+
+    	cd
+    	mkdir cs
+
+2. Then just say `sshfs -o auto_cache` *\<your cs username\>*`@powerpuff.cs.brynmawr.edu:` *\<your empty directory\>*. Continuing
+my example, I would type
+
+        sshfs -o auto_cache rae@powerpuff.cs.brynmawr.edu: cs
+
+    Note the `:` at the end of the address! Then, you should see your networked home directory in `cs`. Any file you write in the
+`cs` directory also gets copied to the server. This way, you can edit locally (with emacs or Atom on your own computer) but
+still compile on powerpuff via `ssh`.
+
+If you want to disconnect, just say `umount` *\<your empty directory\>*. In my case, that's `umount cs`.
+
 See also the last section here about some advice about working remotely.
 
 From Windows, working locally
@@ -74,6 +95,11 @@ tweaking them may prove fruitful. The `pscp.exe` program will allow you to
 copy files back and forth between your computer and the server.
 
 Once you have logged in with PuTTY, you should be able to run `emacs` or `ghci`, and away you go.
+
+An alternative approach is to use SSHFS, which allows you to access your networked home
+directory as if it were local. [This guide](https://igikorn.com/sshfs-windows-10/) is up-to-date and seems reasonable, but I have not tested
+it myself. The *Host* should be `powerpuff.cs.brynmawr.edu`; other settings should be straightforward. If you try this and have thoughts
+you wish to share, edit [this page](https://github.com/bmc-cs380/cs380/blob/master/fromhome.md) and submit a pull request.
 
 See also below for some advice about working remotely.
 
