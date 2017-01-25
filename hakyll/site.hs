@@ -23,6 +23,10 @@ main = hakyll $ do
     route   dropWebRoute
     compile copyFileCompiler
 
+  match "labs/*" $ do
+    route   $ idRoute
+    compile $ copyFileCompiler
+
   match (fromRegex "^[0-9][0-9]_[^/]+/[^/]*\\.md") $ do
     route   $ dropClassNameRoute `composeRoutes` setHtmlExtension
     compile $ mdCompiler

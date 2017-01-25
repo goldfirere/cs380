@@ -1,0 +1,27 @@
+I. Gradescope
+II. Types exercise
+III. Details
+IV. Unit tests
+--------
+V. Lab
+
+Gradescope (9:40-9:50)
+ - submission example
+
+Types exercise (9:50-10:20)
+
+Details (10:20-10:30)
+  - modules
+  - declarations
+  - expressions
+  - `where`
+  - strings
+  - characters
+  - no upper-case variables
+  - main
+  - layout
+
+Unit testing (10:30-10:50)
+ - Example
+
+
