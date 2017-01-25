@@ -150,5 +150,3 @@ tconcat = "concat" ~: assertFailure "testcase for concat"
 tconcatMap :: Test
 tconcatMap = "concatMap" ~: assertFailure "testcase for concatMap"
 
-
-    assert $ pass @=? cases s0 - (errors s0 + failures s0)
