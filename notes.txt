@@ -35,3 +35,6 @@ Use learn.hfm.io, Gabi and Manuel's tutorial for Haskell For Mac.
 
 
 Brent's PL course may be relevant: http://ozark.hendrix.edu/~yorgey/360/f16/
+
+
+Rummikub as inspiration for assignment??
