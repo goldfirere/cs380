@@ -40,16 +40,16 @@ represents my aims.
 |   |     |                    |                |                |                    |                    |                  |
 |   |     |                    |                |                |                    |                    |                  |
 +---+-----+--------------------+----------------+----------------+--------------------+--------------------+------------------+
-| 4 |1/30 | * Folds            |                |                | [Assignment 1] due |                    |                  |
-|   |     |                    |                |                |                    |                    |                  |
-|   |     |                    |                |                | Assignment 2 out   |                    |                  |
+| 4 |1/30 | * Lists            | * [Chapter 3   | [Lists.hs]     | [Assignment 1] due |                    | [List            |
+|   |     | * Modules          |from Real World |                |                    |                    |comprehension     |
+|   |     |                    |Haskell]        |                |                    |                    |exercises]        |
 |   |     |                    |                |                |                    |                    |                  |
 |   |     |                    |                |                |                    |                    |                  |
 |   |     |                    |                |                |                    |                    |                  |
 |   |     |                    |                |                |                    |                    |                  |
 +---+-----+--------------------+----------------+----------------+--------------------+--------------------+------------------+
 | 5 |2/1  | * Algebraic data   |                |                |                    | Lab 3: Trees       |                  |
-|   |     |types               |                |                |                    |                    |                  |
+|   |     |types               |                |                | Assignment 2 out   |                    |                  |
 |   |     | * Maybe            |                |                |                    |                    |                  |
 |   |     | * Trees            |                |                |                    |                    |                  |
 |   |     |                    |                |                |                    |                    |                  |
@@ -60,20 +60,21 @@ represents my aims.
 |   |     |                    |                |                |                    |                    |                  |
 |   |     |                    |                |                |                    |                    |                  |
 +---+-----+--------------------+----------------+----------------+--------------------+--------------------+------------------+
-| 6 |2/6  | * Parameterized    |                |                |Assignment 2 due    |                    |                  |
+| 6 |2/6  | * Parameterized    |                |                |                    |                    |                  |
 |   |     |datatypes           |                |                |                    |                    |                  |
-|   |     | * Parametricity    |                |                |Assignment 3 out    |                    |                  |
+|   |     | * Parametricity    |                |                |                    |                    |                  |
 |   |     |                    |                |                |                    |                    |                  |
 +---+-----+--------------------+----------------+----------------+--------------------+--------------------+------------------+
-| 7 |2/8  | * Proofs over      |                |                |                    | Lab 4: Monoids     |                  |
+| 7 |2/8  | * Proofs over      |                |                |Assignment 2 due    | Lab 4: Monoids     |                  |
 |   |     |functional programs |                |                |                    |                    |                  |
+|   |     |                    |                |                |Assignment 3 out    |                    |                  |
 |   |     |                    |                |                |                    |                    |                  |
 +---+-----+--------------------+----------------+----------------+--------------------+--------------------+------------------+
-| 8 |2/13 | * Type classes     |                |                | Assignment 3 due   |                    |                  |
+| 8 |2/13 | * Type classes     |                |                |                    |                    |                  |
 |   |     |                    |                |                |                    |                    |                  |
 |   |     |                    |                |                |                    |                    |                  |
 +---+-----+--------------------+----------------+----------------+--------------------+--------------------+------------------+
-| 9 |2/15 | * QuickCheck       |                |                |                    |                    |                  |
+| 9 |2/15 | * QuickCheck       |                |                | Assignment 3 due   |                    |                  |
 |   |     |                    |                |                |                    |                    |                  |
 |   |     |                    |                |                |                    |                    |                  |
 +---+-----+--------------------+----------------+----------------+--------------------+--------------------+------------------+
@@ -181,3 +182,6 @@ represents my aims.
 [Course survey]: https://docs.google.com/forms/d/e/1FAIpQLScwTPjvehHXtIR0j14ygq_72_ZULOFhajYMp_d79621bT1lRA/viewform
 [Testing.hs]: 03/Testing.hs
 [Lab 2]: labs/Lab02.hs
+[Chapter 3 from Real World Haskell]: http://book.realworldhaskell.org/read/defining-types-streamlining-functions.html
+[List comprehension exercises]: 04/exercises.pdf
+[Lists.hs]: 04/Lists.hs

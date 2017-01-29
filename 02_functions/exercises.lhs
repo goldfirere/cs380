@@ -12,8 +12,6 @@
 
 \begin{comment}
 \begin{code}
-module Exercises where
-
 import Prelude hiding ((++), concatMap)
 \end{code}
 \end{comment}

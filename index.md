@@ -122,6 +122,10 @@ outdated book on learning Haskell. It is also free online at <http://learnyouaha
 
 * Lots of tutorials are available at <https://www.schoolofhaskell.com/>.
 
+* Standard library documentation is at <http://hackage.haskell.org/package/base>.
+
+* The Hoogle search engine (you can search by type!) is at <https://www.stackage.org/>.
+
 It can be hard to sort through all of this. If you find a tidbit (individual chapter of a book,
 tutorial, etc.) that you find helpful, [tell us all][mailing-list].
 

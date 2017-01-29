@@ -7,7 +7,7 @@ STUBS = $(HWS:%=hw/%)
 
 FMTS = etc/rae.fmt
 
-LHS2TEX_PATH = ../etc:/Users/rae/.cabal/share/x86_64-osx-ghc-8.0.1/lhs2tex-1.19
+LHS2TEX_PATH = ../etc:$(HOME)/.cabal/share/x86_64-osx-ghc-8.0.1/lhs2tex-1.19
 
 default:
 	@echo "Choose what to make."
@@ -22,6 +22,8 @@ hakyll/site: hakyll/*.hs
 	rm -rf _cache _site
 	ghc --make hakyll/site.hs
 
+code: $(LHSS:%.lhs=%.o)
+
 %.pdf: %.tex
 	cd $(dir $*); latexmk -pdf $(notdir $*)
 
@@ -31,12 +33,18 @@ hakyll/site: hakyll/*.hs
 hw/%.hs: private/hw/%.hs
 	hpp -DSTUB $< $@
 
+%.o: %.hs
+	ghc -c $^
+
+%.hs: %.lhs $(FMTS)
+	cd $(dir $*); lhs2TeX --path=$(LHS2TEX_PATH) --newcode -o $(notdir $@) $(notdir $<)
+
 clean:
 	rm -rf _cache _site
-	rm -rf hakyll/*.{o,hi,dyn_o,dyn_hi}
+	rm -rf */*.{o,hi,dyn_o,dyn_hi}
 	rm -rf [0-9][0-9]_*/*.{aux,log,out,bbl,blg,ptb,fls,fdb_latexmk,synctex.gz}
 	rm -rf $(PDFS)
-	rm -rf $(LHSS:%.lhs=%.tex)
+	rm -rf $(LHSS:%.lhs=%.tex) $(LHSS:%.lhs=%.hs)
 
 deploy:
 	[[ -z `git status -s` ]]  # deploy only when committed
@@ -51,4 +59,5 @@ deploy:
           # --progress == talk to me
           # -e ssh == use SSH
 
-.PHONY: web rebuild deploy default
+.PHONY: web rebuild deploy default code
+.SECONDARY:

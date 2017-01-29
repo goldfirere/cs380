@@ -80,16 +80,14 @@
 	     StandaloneDeriving, ScopedTypeVariables,
 	     MultiParamTypeClasses, FunctionalDependencies, FlexibleInstances,
 	     UndecidableInstances, TemplateHaskell, TypeInType,
-	     AllowAmbiguousTypes, TypeApplications, FlexibleContexts,
-	     RebindableSyntax, OverloadedStrings, PatternSynonyms #-}
+	     TypeApplications, FlexibleContexts,
+	     PatternSynonyms #-}
 {-# OPTIONS_GHC -Wall -Wno-unused-imports
                       -Wno-name-shadowing
 		      -Wno-redundant-constraints
 		      -Wno-missing-signatures #-}
 
-module Chapter where
-
-import ThesisPreamble
+module Exercise where
 \end{code}
 
 %endif

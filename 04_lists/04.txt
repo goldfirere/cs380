@@ -1,0 +1,25 @@
+I. Questions?
+III. Lists
+II. Types
+IV. Details
+
+Questions? (9:40-9:50)
+
+Lists (9:50-10:20)
+
+Types (10:20-10:45)
+
+Details (10:45-11:00)
+  - modules
+  - declarations
+  - expressions
+  - `where`
+  - strings
+  - characters
+  - no upper-case variables
+  - main
+  - layout
+  - Hoogle
+  - Hackage
+  - cabal
+
