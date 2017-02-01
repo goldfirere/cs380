@@ -48,8 +48,8 @@ represents my aims.
 |   |     |                    |                |                |                    |                    |                  |
 |   |     |                    |                |                |                    |                    |                  |
 +---+-----+--------------------+----------------+----------------+--------------------+--------------------+------------------+
-| 5 |2/1  | * Algebraic data   |                |                |                    | Lab 3: Trees       |                  |
-|   |     |types               |                |                | Assignment 2 out   |                    |                  |
+| 5 |2/1  | * Algebraic data   |                |                |                    | [Lab 3]\: Trees    |                  |
+|   |     |types               |                |                | [Assignment 2] out |                    |                  |
 |   |     | * Maybe            |                |                |                    |                    |                  |
 |   |     | * Trees            |                |                |                    |                    |                  |
 |   |     |                    |                |                |                    |                    |                  |
@@ -65,7 +65,7 @@ represents my aims.
 |   |     | * Parametricity    |                |                |                    |                    |                  |
 |   |     |                    |                |                |                    |                    |                  |
 +---+-----+--------------------+----------------+----------------+--------------------+--------------------+------------------+
-| 7 |2/8  | * Proofs over      |                |                |Assignment 2 due    | Lab 4: Monoids     |                  |
+| 7 |2/8  | * Proofs over      |                |                |[Assignment 2] due  | Lab 4: Monoids     |                  |
 |   |     |functional programs |                |                |                    |                    |                  |
 |   |     |                    |                |                |Assignment 3 out    |                    |                  |
 |   |     |                    |                |                |                    |                    |                  |
@@ -185,3 +185,4 @@ represents my aims.
 [Chapter 3 from Real World Haskell]: http://book.realworldhaskell.org/read/defining-types-streamlining-functions.html
 [List comprehension exercises]: 04/exercises.pdf
 [Lists.hs]: 04/Lists.hs
+[Lab 3]: labs/Lab03.hs

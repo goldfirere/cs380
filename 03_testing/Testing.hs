@@ -33,6 +33,7 @@ import Test.HUnit
 len :: [a] -> Int
 len [_]      = 1
 len (_ : xs) = 1 + len xs
+len [] = 0
 
 len_test :: Test
 len_test = TestList [ "abc"   ~: len "abc"   ~?= 3
@@ -59,14 +60,14 @@ prime n
   | n < 2 = False
   | otherwise
   = null (filter ((== 0) . (n `mod`)) test_divisors)
-  where
+  where {
      -- a list of integers from 2 up to the square root of n
-    test_divisors = range 2 (round (sqrt (fromIntegral n)))
+    test_divisors = range 2 (round (sqrt (fromIntegral n)));
 
      -- generate a list going from lo (inclusive) to hi (exclusive)
-    range lo hi
+         range lo hi
       | lo >= hi  = []
-      | otherwise = lo : range (lo+1) hi
+      | otherwise = lo : range (lo+1) hi; }
 
 prime_test :: Test
 prime_test = TestList [ "1" ~: prime 1 ~?= False

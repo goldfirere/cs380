@@ -5,9 +5,14 @@
 
 module Lists where
 
+import qualified Other as O ( x, z )
+
+y = O.x
+z = O.z
+
 -- This is a plain old list of numbers
 boring :: [Integer]
-boring = [1,2,8,2,5,0]
+boring = [1,2,8,2,5,0] -- 1 : 2 : 8 : 2 : 5 : 0 : []
 
 -- The empty list is written with [] and is pronounced "nil"
 nil :: [a]
@@ -89,6 +94,7 @@ isPrime x = x >= 2 && null (divisors x)
 -- is infinite: https://en.wikipedia.org/wiki/Fibonacci_prime
 primeFibs :: [Integer]
 primeFibs = [ f | f <- fibs, isPrime f ]
+primeFibs' = filter isPrime fibs
 
 -- List comprehensions can compute a Cartesian product:
 prod :: [a] -> [b] -> [(a,b)]
@@ -101,3 +107,18 @@ endsIn3 = [ (a,b) | a <- [1..15], b <- [1..15], a*b `mod` 10 == 3 ]
 -- Finds words whose reverse is also a word. (Very inefficient!)
 flippers :: [String] -> [String]
 flippers words = [ word | word <- words, reverse word `elem` words ]
+{-
+(.) :: (b -> c) -> (a -> b) -> (a -> c)
+(.) f g x = f (g x)
+
+zipWith :: (a -> b -> c) -> [a] -> [b] -> [c]
+zipWith f (x:xs) (y:ys) = f x y : zipWith f xs ys
+zipWith _ _ _ = []
+-}
+{-
+f :: [a] -> Int
+f (x:xs) = 0
+f [] = 1
+-}
+
+Word = "hi"

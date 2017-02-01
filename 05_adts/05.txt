@@ -1,0 +1,8 @@
+I. More details
+II. Maybe
+III. Types
+IV. Arith
+
+Maybe
+ - GADT syntax
+ - deriving

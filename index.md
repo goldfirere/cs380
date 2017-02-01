@@ -30,7 +30,7 @@ Office Hours:                  Mondays 1:15-2:30, Tuesdays 2:30-3:30.
 <span class="strut" />
 Lecture:                       MW 9:40-11:00
 Lecture Room:                  Park 336
-Lecture Recordings:            at [Tegrity](https://brynmawr.tegrity.com/#/course/b3842132-b03d-41bd-8064-3cf741138497)
+Lecture Recordings:            at [Tegrity](https://brynmawr.tegrity.com/#/course/b3842132-b03d-41bd-8064-3cf741138497) (Non-BMC students can login through our Moodle page.)
 Lab:                           W 11:10-12:30
 Lab Room:                      Park 231
 Website:                       <http://cs.brynmawr.edu/cs380>
