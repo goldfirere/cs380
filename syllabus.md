@@ -186,3 +186,4 @@ represents my aims.
 [List comprehension exercises]: 04/exercises.pdf
 [Lists.hs]: 04/Lists.hs
 [Lab 3]: labs/Lab03.hs
+[Assignment 2]: hw02/Hw02.hs
