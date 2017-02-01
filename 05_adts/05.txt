@@ -1,8 +1,16 @@
 I. More details
 II. Maybe
-III. Types
-IV. Arith
+III. ADTs
+IV. Types
+V. Arith
 
 Maybe
+ - look up on Hoogle
+ - find
+ - maximum
+ - head
+ - partiality
+
+ADTs
  - GADT syntax
  - deriving

@@ -1,7 +1,3 @@
--- See http://www.seas.upenn.edu/~cis552/15fa/lectures/stub/SecretCode.html perhaps
-
--- wilmington exercises?
-
 -- Lab03.hs
 -- Names:
 --
@@ -11,6 +7,10 @@
 -- classwork repo, at https://github.com/bmc-cs380/classwork
 -- Please rename the file before upload so you don't clobber your
 -- classmates' work!
+
+{-# LANGUAGE GADTSyntax #-}
+
+module Lab03 where
 
 {- 1. Peer Review
 
