@@ -1,5 +1,5 @@
 TEXS := $(wildcard [0-9][0-9]_*/*.tex)
-LHSS := $(wildcard [0-9][0-9]_*/*.lhs)
+LHSS := $(wildcard [0-9][0-9]_*/*.lhs) $(wildcard private/quizzes/*.lhs)
 PDFS := $(TEXS:%.tex=%.pdf) $(LHSS:%.lhs=%.pdf)
 
 HWS = 01/Intro.hs
@@ -7,7 +7,7 @@ STUBS = $(HWS:%=hw/%)
 
 FMTS = etc/rae.fmt
 
-LHS2TEX_PATH = ../etc:$(HOME)/.cabal/share/x86_64-osx-ghc-8.0.1/lhs2tex-1.19
+LHS2TEX_PATH = $(CURDIR)/etc:$(HOME)/.cabal/share/x86_64-osx-ghc-8.0.1/lhs2tex-1.19
 
 default:
 	@echo "Choose what to make."

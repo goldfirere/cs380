@@ -102,10 +102,3 @@ endsIn3 = [ (a,b) | a <- [1..15], b <- [1..15], a*b `mod` 10 == 3 ]
 -- Finds words whose reverse is also a word. (Very inefficient!)
 flippers :: [String] -> [String]
 flippers words = [ word | word <- words, reverse word `elem` words ]
-
-(.) :: (b -> c) -> (a -> b) -> (a -> c)
-(.) f g x = f (g x)
-
-zipWith :: (a -> b -> c) -> [a] -> [b] -> [c]
-zipWith f (x:xs) (y:ys) = f x y : zipWith f xs ys
-zipWith _ _ _ = []

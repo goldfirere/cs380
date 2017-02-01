@@ -49,8 +49,8 @@ represents my aims.
 |   |     |                    |                |                |                    |                    |                  |
 +---+-----+--------------------+----------------+----------------+--------------------+--------------------+------------------+
 | 5 |2/1  | * Algebraic data   |                |                |                    | [Lab 3]\: Trees    |                  |
-|   |     |types               |                |                | [Assignment 2] out |                    |                  |
-|   |     | * Maybe            |                |                |                    |                    |                  |
+|   |     |types               |                | [Class.hs][05c]| [Assignment 2] out |                    |                  |
+|   |     | * Maybe            |                |from class      |                    |                    |                  |
 |   |     | * Trees            |                |                |                    |                    |                  |
 |   |     |                    |                |                |                    |                    |                  |
 |   |     |                    |                |                |                    |                    |                  |
@@ -187,3 +187,4 @@ represents my aims.
 [Lists.hs]: 04/Lists.hs
 [Lab 3]: labs/Lab03.hs
 [Assignment 2]: hw02/Hw02.hs
+[05c]: 05/Class.hs
