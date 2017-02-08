@@ -60,21 +60,23 @@ represents my aims.
 |   |     |                    |                |                |                    |                    |                  |
 |   |     |                    |                |                |                    |                    |                  |
 +---+-----+--------------------+----------------+----------------+--------------------+--------------------+------------------+
-| 6 |2/6  | * Parameterized    |                |                |                    |                    |                  |
-|   |     |datatypes           |                |                |                    |                    |                  |
-|   |     | * Parametricity    |                |                |                    |                    |                  |
-|   |     |                    |                |                |                    |                    |                  |
+| 6 |2/6  | * More on Trees    |                | *              |                    |                    | [Maybe.hs] from  |
+|   |     |                    |                |[Arith.hs][ar1] |                    |                    |class             |
+|   |     |                    |                | *              |                    |                    |                  |
+|   |     |                    |                |[Parser.hs][pa1]|                    |                    |                  |
 +---+-----+--------------------+----------------+----------------+--------------------+--------------------+------------------+
-| 7 |2/8  | * Proofs over      |                |                |[Assignment 2] due  | Lab 4: Monoids     |                  |
-|   |     |functional programs |                |                |                    |                    |                  |
-|   |     |                    |                |                |Assignment 3 out    |                    |                  |
-|   |     |                    |                |                |                    |                    |                  |
+| 7 |2/8  | * Parametricity    | * [Chapter 6   | [Peano.hs]     |[Assignment 2] due  | [Lab 4]\: Peano    | [Parametricity   |
+|   |     | * Proofs over      |from Real World |                |                    |                    |exercises]        |
+|   |     |functional programs |Haskell], up to |                |[Assignment 3] out  |                    |                  |
+|   |     |                    |(but not        |                |                    |                    |                  |
+|   |     |                    |including) the  |                | * [Arith.hs][ar2]  |                    |                  |
+|   |     |                    |JSON part       |                | * [Parser.hs][pa2] |                    |                  |
 +---+-----+--------------------+----------------+----------------+--------------------+--------------------+------------------+
 | 8 |2/13 | * Type classes     |                |                |                    |                    |                  |
 |   |     |                    |                |                |                    |                    |                  |
 |   |     |                    |                |                |                    |                    |                  |
 +---+-----+--------------------+----------------+----------------+--------------------+--------------------+------------------+
-| 9 |2/15 | * QuickCheck       |                |                | Assignment 3 due   |                    |                  |
+| 9 |2/15 | * QuickCheck       |                |                | [Assignment 3] due |                    |                  |
 |   |     |                    |                |                |                    |                    |                  |
 |   |     |                    |                |                |                    |                    |                  |
 +---+-----+--------------------+----------------+----------------+--------------------+--------------------+------------------+
@@ -188,3 +190,13 @@ represents my aims.
 [Lab 3]: labs/Lab03.hs
 [Assignment 2]: hw02/Hw02.hs
 [05c]: 05/Class.hs
+[ar1]: 06/Arith.hs
+[pa1]: 06/Parser.hs
+[Maybe.hs]: 06/Maybe.hs
+[Chapter 6 from Real World Haskell]: http://book.realworldhaskell.org/read/using-typeclasses.html
+[Lab 4]: labs/Lab04.html
+[Peano.hs]: 07/Peano.hs
+[Parametricity exercises]: 07/parametricity.pdf
+[Assignment 3]: hw03/Halgebra.hs
+[ar2]: hw03/Arith.hs
+[pa2]: hw03/Parser.hs

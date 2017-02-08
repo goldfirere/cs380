@@ -23,7 +23,7 @@ main = hakyll $ do
     route   dropWebRoute
     compile copyFileCompiler
 
-  match "labs/*" $ do
+  match "labs/*.hs" $ do
     route   $ idRoute
     compile $ copyFileCompiler
 

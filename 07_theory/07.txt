@@ -1,0 +1,27 @@
+parametricity
+parametricity exercises from cis194
+
+peano Nats
+prove commutativity
+
+remember the quiz
+
+post stuff from Monday
+
+I. Parametricity
+II. Proofs
+
+Parametricity (9:45-10:10)
+ - a -> a
+ - a -> b -> a
+ - Maybe a -> a
+ - a -> b
+ - (a -> b -> c) -> b -> a -> c
+ - (a, b) -> a
+
+Exercise (10:10-10:30)
+
+Proofs (10:30-11:00)
+ - peano Nats
+ - proof that (plus n Zero) == n
+ - proof that plus is commutative
