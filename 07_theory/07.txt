@@ -1,13 +1,3 @@
-parametricity
-parametricity exercises from cis194
-
-peano Nats
-prove commutativity
-
-remember the quiz
-
-post stuff from Monday
-
 I. Parametricity
 II. Proofs
 
