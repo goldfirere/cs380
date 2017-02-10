@@ -10,20 +10,24 @@ data Sum where
   Plus  :: Sum -> Sum -> Sum
   Minus :: Sum -> Sum -> Sum
   Term  :: Term -> Sum
+  deriving Eq
 
 data Term where
   Mult   :: Term -> Term -> Term
   Div    :: Term -> Term -> Term
   Factor :: Factor -> Term
+  deriving Eq
 
 data Factor where
   Lit :: Integer -> Factor
   Var :: Factor            -- always "x"
   Sum :: Sum -> Factor
+  deriving Eq
 
 -- an Equation has a left-hand side and a right-hand side
 data Equation where
   Equation :: Sum -> Sum -> Equation
+  deriving Eq
 
 -- You may wish to uncomment one set of Show instances below,
 -- depending on whether you want pretty-printing or ugly-printing.
@@ -58,4 +62,3 @@ deriving instance Show Term
 deriving instance Show Factor
 deriving instance Show Equation
 -}
-
