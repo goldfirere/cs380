@@ -73,9 +73,9 @@ represents my aims.
 |   |     |                    |JSON part       |                | * [Arith.hs][ar2]  |                    |                  |
 |   |     |                    |                |                | * [Parser.hs][pa2] |                    |                  |
 +---+-----+--------------------+----------------+----------------+--------------------+--------------------+------------------+
-| 8 |2/13 | * Type classes     |                | [Class.hs][c8] |                    |                    |                  |
-|   |     |                    |                |I/O example     |                    |                    |                  |
-|   |     |                    |                |                |                    |                    |                  |
+| 8 |2/13 | * Type classes     |                | [Class.hs][c8] |                    |                    | * [I/O functions]|
+|   |     |                    |                |I/O example     |                    |                    | * [HTTP          |
+|   |     |                    |                |                |                    |                    |functions]        |
 +---+-----+--------------------+----------------+----------------+--------------------+--------------------+------------------+
 | 9 |2/15 | * QuickCheck       |                |                | [Assignment 3] due |                    |                  |
 |   |     |                    |                |                |                    |                    |                  |
@@ -203,3 +203,5 @@ represents my aims.
 [ar2]: hw03/Arith.hs
 [pa2]: hw03/Parser.hs
 [c8]: 08/Class.hs
+[I/O functions]: http://hackage.haskell.org/package/base-4.9.1.0/docs/System-IO.html
+[HTTP functions]: http://hackage.haskell.org/package/HTTP-4000.3.5/docs/Network-HTTP.html
