@@ -67,13 +67,14 @@ represents my aims.
 +---+-----+--------------------+----------------+----------------+--------------------+--------------------+------------------+
 | 7 |2/8  | * Parametricity    | * [Chapter 6   | [Peano.hs]     |[Assignment 2] due  | [Lab 4]\: Peano    | [Parametricity   |
 |   |     | * Proofs over      |from Real World |                |                    |                    |exercises]        |
-|   |     |functional programs |Haskell], up to |                |[Assignment 3] out  |                    |                  |
-|   |     |                    |(but not        |                |                    |                    |                  |
-|   |     |                    |including) the  |                | * [Arith.hs][ar2]  |                    |                  |
-|   |     |                    |JSON part       |                | * [Parser.hs][pa2] |                    |                  |
+|   |     |functional programs |Haskell], up to |                |Assignment 3,       |                    |                  |
+|   |     |                    |(but not        |                |[Halgebra.hs], out  |                    |                  |
+|   |     |                    |including) the  |                |                    |                    |                  |
+|   |     |                    |JSON part       |                | * [Arith.hs][ar2]  |                    |                  |
+|   |     |                    |                |                | * [Parser.hs][pa2] |                    |                  |
 +---+-----+--------------------+----------------+----------------+--------------------+--------------------+------------------+
-| 8 |2/13 | * Type classes     |                |                |                    |                    |                  |
-|   |     |                    |                |                |                    |                    |                  |
+| 8 |2/13 | * Type classes     |                | [Class.hs][c8] |                    |                    |                  |
+|   |     |                    |                |I/O example     |                    |                    |                  |
 |   |     |                    |                |                |                    |                    |                  |
 +---+-----+--------------------+----------------+----------------+--------------------+--------------------+------------------+
 | 9 |2/15 | * QuickCheck       |                |                | [Assignment 3] due |                    |                  |
@@ -197,6 +198,8 @@ represents my aims.
 [Lab 4]: labs/Lab04.html
 [Peano.hs]: 07/Peano.hs
 [Parametricity exercises]: 07/parametricity.pdf
+[Halgebra.hs]: hw03/Halgebra.hs
 [Assignment 3]: hw03/Halgebra.hs
 [ar2]: hw03/Arith.hs
 [pa2]: hw03/Parser.hs
+[c8]: 08/Class.hs
