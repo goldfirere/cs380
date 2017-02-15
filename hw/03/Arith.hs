@@ -53,7 +53,6 @@ instance Show Equation where
   show (Equation lhs rhs) = show lhs ++ " = " ++ show rhs
 -}
 
-{-
 -- These instances tell GHCi to print out the internal structure
 -- of the types above
 
@@ -61,4 +60,3 @@ deriving instance Show Sum
 deriving instance Show Term
 deriving instance Show Factor
 deriving instance Show Equation
--}
