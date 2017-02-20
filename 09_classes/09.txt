@@ -1,0 +1,11 @@
+parentheses
+`let`
+solutions
+
+I. Bits & bobs
+II. Type classes
+III. Browser
+
+Type classes:
+ - write classes for Tree in hw02
+ - students write Num Nat and Monoid OrdList
