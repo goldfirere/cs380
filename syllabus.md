@@ -81,9 +81,10 @@ represents my aims.
 |   |     | * I/O              |                |I/O example     |                    |                    | * [HTTP          |
 |   |     |                    |                |                |                    |                    |functions]        |
 +---+-----+--------------------+----------------+----------------+--------------------+--------------------+------------------+
-|9  |2/20 | * Type classes     |                |                | Assignment 4 out   |                    |                  |
-|   |     |(`Num`, `Eq`,       |                |                |                    |                    |                  |
+|9  |2/20 | * Type classes     |                | [Class.hs][c9] | [Assignment 4] out |                    | [markets.json]   |
+|   |     |(`Num`, `Eq`,       |                |classes example |                    |                    |                  |
 |   |     |`Monoid`, etc.)     |                |                |                    |                    |                  |
+|   |     |                    |                |                |                    |                    |                  |
 |   |     |                    |                |                |                    |                    |                  |
 +---+-----+--------------------+----------------+----------------+--------------------+--------------------+------------------+
 |10 |2/22 | * Functors         |                |                |                    |                    |                  |
@@ -94,7 +95,7 @@ represents my aims.
 |   |     |                    |                |                |                    |                    |                  |
 |   |     |                    |                |                |                    |                    |                  |
 +---+-----+--------------------+----------------+----------------+--------------------+--------------------+------------------+
-|11 |2/27 | * Review           |                |                | Assignment 4 due   |                    |                  |
+|11 |2/27 | * Review           |                |                | [Assignment 4] due |                    |                  |
 |   |     |                    |                |                |                    |                    |                  |
 |   |     |                    |                |                |                    |                    |                  |
 |   |     |                    |                |                |                    |                    |                  |
@@ -208,3 +209,6 @@ represents my aims.
 [I/O functions]: http://hackage.haskell.org/package/base-4.9.1.0/docs/System-IO.html
 [HTTP functions]: http://hackage.haskell.org/package/HTTP-4000.3.5/docs/Network-HTTP.html
 [HTTP example]: 08/Lab.hs
+[Assignment 4]: 09/markets.pdf
+[markets.json]: 09/markets.json
+[c9]: 09/Class.hs

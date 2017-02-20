@@ -35,7 +35,7 @@ main = hakyll $ do
     route   $ dropClassNameRoute
     compile $ copyFileCompiler
 
-  match (fromRegex "^[0-9][0-9]_[^/]+/[^0-9][^/]*\\.(pdf|txt|hs)" .&&. complement "**/quiz.pdf") $ do
+  match (fromRegex "^[0-9][0-9]_[^/]+/[^0-9][^/]*\\.(pdf|txt|hs|json)" .&&. complement "**/quiz.pdf") $ do
     route   $ dropClassNameRoute
     compile $ copyFileCompiler
 
