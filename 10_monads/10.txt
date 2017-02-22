@@ -2,3 +2,38 @@ functors
 monads
 monoids
 wrappers
+
+I. Monoids
+II. Wrappers
+III. Functors
+IV. Monads
+
+Monoids (9:40-10:05)
+ - laws: associativity, L+R identity
+ - lists
+ - Ordering
+ - tuples
+ - foldMap :: (a -> m) -> [a] -> m
+
+Wrappers (10:05-10:15)
+ - Monoid wrappers
+ - Down Ord wrapper
+ - (newtype)
+
+Functors (10:15-10:30)
+ - laws: fmap id = id; fmap (g.f) = fmap g . fmap f
+ - Maybe
+ - List
+ - Vector
+ - kinds
+ - Activity: write a Functor instance for Tree  (10:30-10:40)
+ - (if time at this point): write a Monoid instance for Tree
+
+Monads (10:40-11:00)
+ - definition
+ - sequencing
+ - "do" notation
+ - Maybe
+ - List
+ - Reader
+ - State

@@ -87,12 +87,15 @@ represents my aims.
 |   |     |                    |                |                |                    |                    |                  |
 |   |     |                    |                |                |                    |                    |                  |
 +---+-----+--------------------+----------------+----------------+--------------------+--------------------+------------------+
-|10 |2/22 | * Functors         |                |                |                    |                    |                  |
-|   |     | * Monads           |                |                |                    |                    |                  |
-|   |     | * QuickCheck       |                |                |                    |                    |                  |
+|10 |2/22 | * Functors         |  * [Intro to   |                |                    |                    |                  |
+|   |     | * Monads           |QuickCheck][qc1]|                |                    | [Lab 5]\: Proofs   |                  |
+|   |     |                    |  * [Further    |                |                    |                    |                  |
+|   |     |                    |reading][qc2]   |                |                    |                    |                  |
 |   |     |                    |                |                |                    |                    |                  |
-|   |     |                    |                |                |                    |                    |                  |
-|   |     |                    |                |                |                    |                    |                  |
+|   |     |                    |I use QuickCheck|                |                    |                    |                  |
+|   |     |                    |to evaluate your|                |                    |                    |                  |
+|   |     |                    |homework. You   |                |                    |                    |                  |
+|   |     |                    |should, too.    |                |                    |                    |                  |
 |   |     |                    |                |                |                    |                    |                  |
 +---+-----+--------------------+----------------+----------------+--------------------+--------------------+------------------+
 |11 |2/27 | * Review           |                |                | [Assignment 4] due |                    |                  |
@@ -212,3 +215,6 @@ represents my aims.
 [Assignment 4]: 09/markets.pdf
 [markets.json]: 09/markets.json
 [c9]: 09/Class.hs
+[qc1]: https://www.schoolofhaskell.com/user/pbv/an-introduction-to-quickcheck-testing
+[qc2]: https://www.stuartgunter.org/posts/intro-to-quickcheck/
+[Lab 5]: labs/Lab05.html
