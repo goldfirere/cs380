@@ -87,9 +87,9 @@ represents my aims.
 |   |     |                    |                |                |                    |                    |                  |
 |   |     |                    |                |                |                    |                    |                  |
 +---+-----+--------------------+----------------+----------------+--------------------+--------------------+------------------+
-|10 |2/22 | * Functors         |  * [Intro to   |                |                    |                    |                  |
-|   |     | * Monads           |QuickCheck][qc1]|                |                    | [Lab 5]\: Proofs   |                  |
-|   |     |                    |  * [Further    |                |                    |                    |                  |
+|10 |2/22 | * Functors         |  * [Intro to   | [Class.hs][c10]|                    |                    |                  |
+|   |     | * Monads           |QuickCheck][qc1]|examples from   |                    | [Lab 5]\: Proofs   |                  |
+|   |     |                    |  * [Further    |class           |                    |                    |                  |
 |   |     |                    |reading][qc2]   |                |                    |                    |                  |
 |   |     |                    |                |                |                    |                    |                  |
 |   |     |                    |I use QuickCheck|                |                    |                    |                  |
@@ -218,3 +218,4 @@ represents my aims.
 [qc1]: https://www.schoolofhaskell.com/user/pbv/an-introduction-to-quickcheck-testing
 [qc2]: https://www.stuartgunter.org/posts/intro-to-quickcheck/
 [Lab 5]: labs/Lab05.html
+[c10]: 10/Class.hs

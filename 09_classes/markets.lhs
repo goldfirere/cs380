@@ -209,7 +209,7 @@ Write a function
 parseData :: B.ByteString -> Maybe Value
 \end{code}
 that takes in a |ByteString| containing JSON data and outputs either
-an error message or a |Value| that has been processed by |ynToBool|.
+|Nothing| or a |Value| that has been processed by |ynToBool|.
 
 \emph{Hint:} This can be very short, if you use |Maybe|'s |Functor|
 instance!
