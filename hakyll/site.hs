@@ -15,47 +15,47 @@ import Debug.Trace
 
 main :: IO ()
 main = hakyll $ do
-  match "web/css/*" $ do
+  piimatch "web/css/*" $ do
     route   dropWebRoute
     compile compressCssCompiler
 
-  match "web/images/*" $ do
+  piimatch "web/images/*" $ do
     route   dropWebRoute
     compile copyFileCompiler
 
-  match "labs/*.hs" $ do
+  piimatch "labs/*.hs" $ do
     route   $ idRoute
     compile $ copyFileCompiler
 
-  match (fromRegex "^[0-9][0-9]_[^/]+/[^/]*\\.md") $ do
+  piimatch (fromRegex "^[0-9][0-9]_[^/]+/[^/]*\\.md") $ do
     route   $ dropClassNameRoute `composeRoutes` setHtmlExtension
     compile $ mdCompiler
 
-  match (fromRegex "^[0-9][0-9]_[^/]+/images/.*") $ do
+  piimatch (fromRegex "^[0-9][0-9]_[^/]+/images/.*") $ do
     route   $ dropClassNameRoute
     compile $ copyFileCompiler
 
-  match (fromRegex "^[0-9][0-9]_[^/]+/[^0-9][^/]*\\.(pdf|txt|hs|json)" .&&. complement "**/quiz.pdf") $ do
+  piimatch (fromRegex "^[0-9][0-9]_[^/]+/[^0-9][^/]*\\.(pdf|txt|hs|json)" .&&. complement "**/quiz.pdf") $ do
     route   $ dropClassNameRoute
     compile $ copyFileCompiler
 
-  match "hw/**/*.md" $ do
+  piimatch "hw/**/*.md" $ do
     route   $ homeworkRoute `composeRoutes` setExtension "html"
     compile $ mdCompiler
 
-  match (complement "**/*.md" .&&. "hw/**") $ do
+  piimatch (complement "**/*.md" .&&. "hw/**") $ do
     route   $ homeworkRoute
     compile $ copyFileCompiler
 
    -- for the navbar
-  match "web/*.md" $
+  piimatch "web/*.md" $
     compile $ pandocCompiler
 
-  match "**.md" $ do   -- catchall
+  piimatch "**.md" $ do   -- catchall
     route   $ setExtension "html"
     compile $ mdCompiler
 
-  match "web/templates/*.html" $ compile templateBodyCompiler
+  piimatch "web/templates/*.html" $ compile templateBodyCompiler
 
 -- drop a "web/" prefix
 dropWebRoute :: Routes
@@ -112,3 +112,6 @@ snocView = go []
     go acc [x]    = (reverse acc, x)
     go acc (x:xs) = go (x:acc) xs
     go _   _      = error "snocView on empty list"
+
+piimatch :: Pattern -> Rules () -> Rules ()
+piimatch pat = match (pat .&&. complement "pii/**" .&&. complement "private/**")
