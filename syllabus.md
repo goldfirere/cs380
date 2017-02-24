@@ -91,7 +91,7 @@ represents my aims.
 |   |     | * Monads           |QuickCheck][qc1]|examples from   |                    | [Lab 5]\: Proofs   |                  |
 |   |     |                    |  * [Further    |class           |                    |                    |                  |
 |   |     |                    |reading][qc2]   |                |                    |                    |                  |
-|   |     |                    |                |                |                    |                    |                  |
+|   |     |                    |                |[FoldMap.hs]    |                    |                    |                  |
 |   |     |                    |I use QuickCheck|                |                    |                    |                  |
 |   |     |                    |to evaluate your|                |                    |                    |                  |
 |   |     |                    |homework. You   |                |                    |                    |                  |
@@ -219,3 +219,4 @@ represents my aims.
 [qc2]: https://www.stuartgunter.org/posts/intro-to-quickcheck/
 [Lab 5]: labs/Lab05.html
 [c10]: 10/Class.hs
+[FoldMap.hs]: 10/FoldMap.hs
