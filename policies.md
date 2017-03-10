@@ -233,7 +233,7 @@ If you have a conflict with my office hours, please email so we can find another
 time to meet.
 
 Beyond my office hours, I aim to have an open-door policy. If you see my
-office door (Park 249) open, please interrupt me: that's why the door is
+office door (Park 204) open, please interrupt me: that's why the door is
 open!
 
 For a broader discussion than just homework questions, I'd be happy to join

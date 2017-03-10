@@ -24,7 +24,7 @@ Email:                         `rae@cs.brynmawr.edu`
 Office Phone:                  610-526-5061
 Home Phone (emergencies only): 484-344-5924
 Cell Phone (emergencies only): 201-575-6474 (no texts, please)
-Office:                        Park 249
+Office:                        Park 204
 Office Hours:                  Mondays 1:15-2:30, Tuesdays 2:30-3:30.
                                If these don't work, do not fret. Email instead.
 <span class="strut" />
