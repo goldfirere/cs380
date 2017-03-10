@@ -1,0 +1,13 @@
+higher-order functions
+  - functions that take functions
+  - map
+  - filter
+
+sections
+currying
+list comprehensions
+guards
+proofs
+
+classes
+fmap

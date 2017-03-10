@@ -1,5 +1,5 @@
 TEXS := $(wildcard [0-9][0-9]_*/*.tex)
-LHSS := $(wildcard [0-9][0-9]_*/*.lhs) $(wildcard private/quizzes/*.lhs)
+LHSS := $(wildcard [0-9][0-9]_*/*.lhs) $(wildcard private/quizzes/*.lhs) $(wildcard exams/*.lhs)
 PDFS := $(TEXS:%.tex=%.pdf) $(LHSS:%.lhs=%.pdf)
 
 HWS = 01/Intro.hs
