@@ -112,9 +112,14 @@ represents my aims.
 |   |     |                    |                |                |                    |                    |                  |
 |   |     |                    |                |                |                    |                    |                  |
 +---+-----+--------------------+----------------+----------------+--------------------+--------------------+------------------+
-|13 |3/13 |                    |                |                |                    |                    |                  |
-|   |     |                    |                |                |                    |                    |                  |
-|   |     |                    |                |                |                    |                    |                  |
+|13 |3/13 | * GADTs            | [Red-black     |                |                    |                    |                  |
+|   |     | * `TypeRep`        |trees], at least|                |                    |                    | * Class13        |
+|   |     | * `Vec`            |the intro and   |                |                    |                    |[html][ht13]      |
+|   |     |                    |"Properties".   |                |                    |                    |[lhs][lhs13]      |
+|   |     |                    |Read enough so  |                |                    |                    |                  |
+|   |     |                    |that you        |                |                    |                    |                  |
+|   |     |                    |understand this |                |                    |                    |                  |
+|   |     |                    |data structure. |                |                    |                    |                  |
 +---+-----+--------------------+----------------+----------------+--------------------+--------------------+------------------+
 |14 |3/15 |                    |                |                |                    |                    |                  |
 |   |     |                    |                |                |                    |                    |                  |
@@ -220,3 +225,6 @@ represents my aims.
 [Lab 5]: labs/Lab05.html
 [c10]: 10/Class.hs
 [FoldMap.hs]: 10/FoldMap.hs
+[Red-black trees]: https://en.wikipedia.org/wiki/Red%E2%80%93black_tree
+[ht13]: 13/Class13.html
+[lhs13]: 13/Class13.md.lhs

@@ -31,6 +31,10 @@ main = hakyll $ do
     route   $ dropClassNameRoute `composeRoutes` setHtmlExtension
     compile $ mdCompiler
 
+  piimatch (fromRegex "^[0-9][0-9]_[^/]+/[^/]*\\.md.lhs") $ version "raw" $ do
+    route   $ dropClassNameRoute
+    compile $ copyFileCompiler
+
   piimatch (fromRegex "^[0-9][0-9]_[^/]+/images/.*") $ do
     route   $ dropClassNameRoute
     compile $ copyFileCompiler
@@ -71,7 +75,7 @@ homeworkRoute = pathRoute $ \ (_hw : number : rest) -> ("hw" ++ number) : rest
 
 setHtmlExtension :: Routes
 setHtmlExtension = pathRoute $ \ (snocView -> (dirs, file)) ->
-                                 dirs ++ [replaceExtension file "html"]
+                                 dirs ++ [replaceExtensions file "html"]
 
 -- drop class name and "examples" from example file
 exampleRoute :: Routes

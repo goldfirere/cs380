@@ -51,10 +51,7 @@ div#footer {
     color: #B8860B;
 }
 
-.c .kw { /* keyword */
+.sourceCode .kw { /* keyword */
     color: #008800;
 }
 
-.c .dt { /* data type */
-    color: #ff8c00; /* DarkOrange */
-}

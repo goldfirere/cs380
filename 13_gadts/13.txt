@@ -1,0 +1,12 @@
+I. You are Haskellers
+II. GADTs
+
+GADTs
+ - lec notes
+ - Vec, including DataKinds
+ - safeHead
+ - reverse the bad way
+ - :~:
+ - reverse, the good way
+
+Portfolios
