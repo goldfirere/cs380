@@ -41,14 +41,14 @@ reverseList xs = go [] xs
   where
     go acc []     = acc
     go acc (y:ys) = go (y:acc) ys
-
+{-
 reverseVec :: Vec n a -> Vec n a
 reverseVec xs = go SZero Nil xs
   where
     go :: SNat m -> Vec m a -> Vec p a -> Vec (m + p) a
     go len acc Nil     = case plus_right_id len of Refl -> acc
     go len acc (y:>ys) = go (SSucc len) (y :> acc) ys
-
+-}
 type family Plus (a :: Nat) (b :: Nat) :: Nat where
   Plus Zero     b = b
   Plus (Succ a) b = Succ (Plus a b)
@@ -73,6 +73,10 @@ data SNat :: Nat -> Type where
   SZero :: SNat Zero
   SSucc :: SNat n -> SNat (Succ n)
 
+data SBool :: Bool -> Type where
+  SFalse :: SBool False
+  STrue  :: SBool True
+
 {-
 data a :~: b where
   Refl :: a :~: a
@@ -86,3 +90,5 @@ plus_right_id SZero = Refl
 plus_right_id (SSucc n')
   = case plus_right_id n' of
       Refl -> Refl
+
+-- plus_ri

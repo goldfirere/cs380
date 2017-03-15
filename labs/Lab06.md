@@ -20,18 +20,48 @@ no lists in your code.
 These are put in order of expected difficulty.
 
 1. `and`
-8. `or`
-9. `any`
-6. `map`
-1. `last`
-1. `unzip`
-3. `uncons` (no need to use `Maybe`)
-2. `init`
-1. `insert`
-1. `sort` (use insertion sort)
-4. `null` (this can return an `SBool`)
-5. `length` (this can return an `SNat`)
-1. `stripPrefix`
-10. `take` (this takes an `SNat`)
-11. `drop` (this takes an `SNat`)
-1. `replicate` (this *takes* an `SNat`)
+2. `or`
+3. `any`
+4. `map`
+5. `last`
+6. `unzip`
+7. `uncons` (no need to use `Maybe`)
+8. `init`
+9. `insert`
+10. `sort` (use insertion sort)
+11. `null` (this can return an `SBool`)
+12. `length` (this can return an `SNat`)
+13. `stripPrefix`
+14. `take` (this takes an `SNat`)
+15. `drop` (this takes an `SNat`)
+16. `replicate` (this *takes* an `SNat`)
+
+Here are some starter definitions you might find helpful:
+
+```haskell
+data Nat where
+  Zero :: Nat
+  Succ :: Nat -> Nat
+
+data Vec :: Nat -> Type -> Type where
+  Nil  :: Vec Zero a
+  (:>) :: a -> Vec n a -> Vec (Succ n) a
+infixr 5 :>
+
+deriving instance Show a => Show (Vec n a)
+
+type family (a :: Nat) + (b :: Nat) :: Nat where
+  Zero   + b = b
+  Succ a + b = Succ (a + b)
+infixl 6 +
+
+-- singleton Nat
+data SNat :: Nat -> Type where
+  SZero :: SNat Zero
+  SSucc :: SNat n -> SNat (Succ n)
+
+-- singleton Bool
+data SBool :: Bool -> Type where
+  SFalse :: SBool False
+  STrue  :: SBool True
+```
