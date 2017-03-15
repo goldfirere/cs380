@@ -17,15 +17,21 @@ Consulting the documentation on [lists](https://www.stackage.org/haddock/lts-8.5
 translation of the following functions to work on `Vec`s. There should be
 no lists in your code.
 
-1. `last`
-6. `map`
-7. `and`
+These are put in order of expected difficulty.
+
+1. `and`
 8. `or`
 9. `any`
-10. `take`
-11. `drop`
-
+6. `map`
+1. `last`
+1. `unzip`
+3. `uncons` (no need to use `Maybe`)
 2. `init`
-3. `uncons`
+1. `insert`
+1. `sort` (use insertion sort)
 4. `null` (this can return an `SBool`)
 5. `length` (this can return an `SNat`)
+1. `stripPrefix`
+10. `take` (this takes an `SNat`)
+11. `drop` (this takes an `SNat`)
+1. `replicate` (this *takes* an `SNat`)
