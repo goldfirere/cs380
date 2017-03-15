@@ -39,6 +39,14 @@ These are put in order of expected difficulty.
 Here are some starter definitions you might find helpful:
 
 ```haskell
+{-# LANGUAGE GADTs, TypeInType, StandaloneDeriving, TypeFamilies,
+             TypeOperators, ScopedTypeVariables' #-}
+{-# OPTIONS_GHC -Wincomplete-patterns #-}
+
+module Lab06 where   -- rename as you please
+
+import Data.Kind ( Type )
+
 data Nat where
   Zero :: Nat
   Succ :: Nat -> Nat

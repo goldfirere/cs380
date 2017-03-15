@@ -1,5 +1,5 @@
 {-# LANGUAGE GADTs, TypeInType, StandaloneDeriving, TypeFamilies,
-             TypeOperators #-}
+             TypeOperators, ScopedTypeVariables' #-}
 {-# OPTIONS_GHC -Wincomplete-patterns #-}
 
 module Class where
