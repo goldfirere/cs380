@@ -231,3 +231,4 @@ represents my aims.
 [lhs13]: 13/Class13.md.lhs
 [c13]: 13/Class.hs
 [Lab 6]: labs/Lab06.html
+[Assignment 5]: hw05/hw05.html
