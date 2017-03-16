@@ -52,10 +52,34 @@ is an act of communication both between you and a computer *and* between you and
 another human. In some sense, correctness is about the former,
 while style is about the latter.
 
-Your grades will be given on a 5-point range, corresponding to Bryn Mawr's
-4-point grading scale. Grades above a 4.0 are precisely equivalent to a grade
-of 4.0, but allow me an opportunity to recognize exceptional work that exceeds
-the expectations of the course.
+Type-heavy assignments (second half of semester)     {#portfolios}
+------------------------------------------------
+
+When we start adding more and more types to our work, it becomes much easier to be
+utterly stuck. It seems the stressful environment engendered by weekly assignment
+deadlines makes this problem worse, not better. The second half of the semester
+will thus use a *portfolio* model, where students accumulate a portfolio of type-correct
+functions. These portfolios will be graded on a completion (and style) basis, toward
+the end of the semester. (The exact date appears on the syllabus.)
+
+There will be assignments with suggested deadlines. When you complete the assignment,
+upload it to your portfolio repo on GitHub, at `https://github.com/bmc-cs380/`*\<your College
+username\>*. As you do so, update the `README.md` file to reflect what assignment lives
+in what file, and any comments you wish to make about the work there. Some assignments
+have you figure out the right types to use. Typically, some time after these assignments
+have been distributed, I will release the correct types. At this point, you should return
+to your work to make sure that your types match mine. If you have the right type and
+a non-trivial implementation, the implementation is almost surely correct -- which is
+why we don't need to worry about correctness in this model.
+
+Note that the deadlines are suggestions only. If you can't finish an assignment by the
+deadline, do not fret. But do, perhaps, come to office hours.
+
+If you want feedback on any aspect of your submitted work, just email. I will endeavor
+to respond quickly!
+
+Your portfolio will count for 25% of your total grade (slightly less than half of the
+55% total for assignments / projects, above).
 
 Class Contributions
 -------------------

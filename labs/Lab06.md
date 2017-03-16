@@ -40,7 +40,7 @@ Here are some starter definitions you might find helpful:
 
 ```haskell
 {-# LANGUAGE GADTs, TypeInType, StandaloneDeriving, TypeFamilies,
-             TypeOperators, ScopedTypeVariables' #-}
+             TypeOperators, ScopedTypeVariables #-}
 {-# OPTIONS_GHC -Wincomplete-patterns #-}
 
 module Lab06 where   -- rename as you please
