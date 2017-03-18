@@ -1,10 +1,9 @@
-
 ---
-title: CS 380 Class 13 Lecture Notes
+title: GADTs lecture notes
 ---
 
-Class 13 -- GADTs
-=================
+GADTs
+=====
 
 This file is a Literate Haskell file. If you download it in LHS format from
 the website, you will be able to compile it in GHCi. When a file ends in the
