@@ -1,0 +1,21 @@
+I. Singletons
+II. Proofs and (:~:)
+III. FList
+
+midterm (9:40-9:50)
+ - proof better than expected
+ - grading philosophy
+ - portfolio submissions
+ - write tests!
+
+singletons (9:50-10:10)
+ - replicate
+
+Proofs (10:10-10:20)
+ - over Vec only
+ - then over SNat
+
+Students write proofs of commutativity
+
+FList (10:40-11:00)
+ - concat

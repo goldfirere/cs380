@@ -128,8 +128,10 @@ represents my aims.
 |   |     |                    |                |                 |                    |                    |[lhs][lhs14]       |
 |   |     |                    |                |                 |                    |                    |                   |
 +---+-----+--------------------+----------------+-----------------+--------------------+--------------------+-------------------+
-|15 |3/20 |                    |                |                 |                    |                    |                   |
-|   |     |                    |                |                 |                    |                    |                   |
+|15 |3/20 | * Proofs in Haskell|                | [Class.hs][c15] |                    |                    | * Proofs lecture  |
+|   |     |                    |                |                 |                    |                    |notes [html][ht15] |
+|   |     |                    |                |                 |                    |                    |[lhs][lhs15] (under|
+|   |     |                    |                |                 |                    |                    |construction)      |
 +---+-----+--------------------+----------------+-----------------+--------------------+--------------------+-------------------+
 |   |3/22 |**Community day of  |                |                 |                    |                    |                   |
 |   |     |learning**          |                |                 |                    |                    |                   |
@@ -234,3 +236,6 @@ represents my aims.
 [Assignment 5]: hw05/hw05.html
 [ht14]: 14/TypeFamilies.html
 [lhs14]: 14/TypeFamilies.md.lhs
+[ht15]: 15/Proofs.html
+[lhs15]: 15/Proofs.md.lhs
+[c15]: 15/Class.hs
