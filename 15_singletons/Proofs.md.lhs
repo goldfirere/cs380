@@ -247,7 +247,10 @@ type variable `n` to come first in `plusSucc`, even though `m` appears first.
 This is because GHC can infer the choice of `m` from whatever we pass in as
 the term-level argument of type `SNat m`. But GHC has no hope to infer our
 choice of `n`. So we choose to put `n` first, making calls to `plusSucc`
-more convenient.
+more convenient. (Passing type arguments explicilty is always optional.
+Here, we are omitting the second argument. If you want to omit an earlier
+argument but supply a later one, use `@_` and GHC will infer the omitted
+argument for you.)
 
 In the recursive call to `plusSucc`, we want to prove that
 `(m' + Succ n) :~: Succ (m' + n)`, so we pass in `n` as the choice for `n`
@@ -259,7 +262,7 @@ Getting `reverseVec` to type-check, finally
 
 The last piece to the puzzle is that we need a way of producing the right
 `SNat`s to pass to `plusZero` and `plusSucc`. It turns out that this is easy
-for `reverseVec`: we can just build it as `go` recurs. Here is the final
+for `reverseVec`, as we can just build it as `go` recurs. Here is the final
 version of `reverseVec`:
 
 > reverseVec :: Vec n a -> Vec n a
@@ -270,11 +273,117 @@ version of `reverseVec`:
 >     go m acc (y :> (ys :: Vec p' a))
 >       = case plusSucc @p' m of Refl -> go (SSucc m) (y :> acc) ys
 
-DON'T LOOK BELOW HERE! UNDER CONSTRUCTION!
+The `Nil` case of `go` is easier to understand. We just want to prove that
+`(m + Zero) ~ m`, easily done by matching on the result of `plusZero m`.
+
+The `:>` case is harder. We need to know that `(m + Succ p') ~ Succ (m + p')`,
+where `p'` is the length of `ys`. Our first problem is that we need to bind
+the `p'` variable. Note that `p` doesn't work, as `p` is really `Succ p'`.
+The way to bind a type variable that's not mentioned in a type signature is
+to put a so-called pattern signature in a function's pattern. In this case,
+we write `:: Vec p' a` as the type of `ys` in the pattern in the second
+equation for `go`. This pattern signature binds `p'` as a new type variable.
+(It also binds `a`, but we don't need that variable.) Then, we pass `p'` as
+the type argument to `plusSucc`, and we are then allowed to recur.
+
+What about the runtimes of `plusZero` and `plusSucc`?
+-----------------------------------------------------
+
+The goal of this line of inquiry was to make a function to reverse `Vec`s in
+linear time. This is doable for lists, so we really should be able to do it
+for `Vec`s. However, `reverseVec`, as written, does not achieve this goal.
+At every recurrence, it calls `plusZero` or `plusSucc`, both of which are
+*linear* in the value of `m`, which in turn is linear in the size of the
+vector being reversed. So `reverseVec` is still quadratic! Oy.
+
+One might wonder, at this point, why `plusZero` or `plusSucc` has to be
+run at all. After all, these functions return values of type `:~:`, and there
+is only one constructor of type `:~:`. Thus, can't we just jump to the chase
+and assume that `plusZero` and `plusSucc` just return `:~:`? Not quite. The
+problem is that `plusZero` or `plusSucc` might never return.
+
+Haskell is a *partial* language, meaning that it admits "functions" that aren't
+really functions, because they don't evaluate to anything (or don't return
+on every input, like the standard library's `head` function). Because of this
+possibility of non-termination, GHC can't just erase calls to `plusZero` and
+`plusSucc`. Instead, it must run the functions simply to see if they terminate.
+
+One day in the future, it is my hope that Haskell will have a termination checker.
+(Don't worry -- I know this is impossible in general. But `plusZero` and `plusSucc`
+are really easy to see that they terminate!) Until then, we can effectively assert
+to GHC that they terminate.
+
+The key observation here is that, if we know `plusZero` and `plusSucc` terminate,
+then we never have to run them. We know they have to return `Refl` after all. So,
+replacing the bodies of these two functions with `Refl` is tantamount to asserting
+that they terminate. But we don't want to just delete the function bodies and write
+`Refl`, because then GHC wouldn't be type-checking our proofs. We want to assert
+termination, but nothing more than just that.
+
+So we will use GHC's `RULES` mechanism. This feature was first described in a
+[paper](https://www.haskell.org/haskell-symposium/2001/2001-62.pdf#page=209)
+at the Haskell Symposium in 2001; it is also documented in the [GHC
+manual](https://downloads.haskell.org/~ghc/8.0.2/docs/html/users_guide/glasgow_exts.html#rewrite-rules).
+The idea of `RULES` is that we provide an expression pattern and a substitution.
+Whenever GHC spots something that matches the pattern, it substitutes in the right-hand
+side substitution. It's that simple. GHC checks to make sure that the pattern and
+the substitution have the same types, but no further checks are done. This feature
+is thus very unsafe but very powerful.
+
+In our case, here are the rules we want:
 
 > {-# RULES
 > "plusZero" forall m. plusZero m = unsafeCoerce (Refl @())
 > "plusSucc" forall m. plusSucc m = unsafeCoerce (Refl @())
 > #-}
+
+The funny syntax arises because `RULES` are not meant to change a program's
+meaning. They should just act as an optimization. Thus, they are considered to
+be not part of Haskell proper, but instead are a feature called a
+[pragma](https://en.wikipedia.org/wiki/Directive_(programming)).
+
+Every rule has a name, a list of variables mentioned on the left-hand side,
+and then an equation. When GHC spots something that matches the left-hand side,
+it inserts the right-hand side. In our case, we want to insert `Refl`. But just
+writing `Refl` causes GHC to complain, because GHC can't prove that, say,
+`(m + Zero) ~ m`. (If it could, we wouldn't need the proofs!) so we use `unsafeCoerce`,
+which does exactly what it says. `unsafeCoerce` (imported from the module
+`Unsafe.Coerce`) has the type `a -> b`. It can take any time and transmute it to
+have another type. At runtime, `unsafeCoerce` does nothing at all -- it's erased
+during compilation. In other words, it's perfect for us here.
+
+There are two more details to cover. The first is the `@{}` argument to `Refl`.
+A bug in GHC 8.0.x (but fixed for GHC 8.2) causes GHC to warn about some unbound
+`k`. (The `k` arises from `Refl`'s type: `forall k (a :: k). a :~: a`. The types
+related by `Refl` can have any kind `k`.) By choosing to instantiate `Refl` at
+the unit type `()`, we avoid the problem.
+
+The last detail is that we need to disable inlining of `plusZero` and `plusSucc`.
+GHC's optimizer is very agressive about [inlining](https://en.wikipedia.org/wiki/Inline_expansion),
+which means to replace a function call with the function body in order to speed
+up execution. If that happened for `plusZero` or `plusSucc`, our rules might never
+match. So we disable inlining for these functions with another pair of pragmas.
+(If we forget these, GHC helpfully suggests to add them.)
+
 > {-# NOINLINE plusZero #-}
 > {-# NOINLINE plusSucc #-}
+
+Now, we've really done it: we've written that pesky linear-time `reverseVec` and
+learned quite a bit along the way.
+
+A note on the complexity of fancy types
+---------------------------------------
+
+It is easy to wonder at this stage: is any of this worth it? Working with fancy
+types is hard, requiring a deep set of knowledge of Haskell's type system and lots
+of time staring down type errors. These are real costs. Should we pay them?
+
+My answer: sometimes. It is surely impractical to use fancy types in every application
+everywhere. (I hope that support for, and general understanding of, fancy types in
+the future makes this more practical. But we're not there yet.) But maybe in the
+deep dark heart of your application, some algorithm is very important and yet
+very easy to get wrong. Adding fancy types there might just save your skin. Though
+we haven't seen how yet, it is possible to call a function with fancy types from
+functions with ordinary types, and so you could make just that one really important
+part precisely typed while leaving the rest of your application alone. In this
+use case, I think the fancy types surely are worth it.
