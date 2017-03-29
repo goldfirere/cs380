@@ -111,7 +111,7 @@ only ever be one constructor of `:~:`, so we don't learn anything by pattern-mat
 right? Not quite. Witness this call to `notty`:
 
 > silly :: Char
-> silly = (error "I faked a proof!") 'x'
+> silly = notty (error "I faked a proof!") 'x'
 
 Because Haskell is lazy, it's possible that the argument of type `a :~: Bool` is
 a computation that diverges (that is, doesn't reduce to a value). In this case,

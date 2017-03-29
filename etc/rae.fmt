@@ -48,7 +48,6 @@
 %format sigma = "\sigma"
 %format alpha = "\alpha"
 %format beta = "\beta"
-%format Type = "\ottkw{Type}"
 %format <$> = "\mathop{{\langle}{\$}{\rangle}}"
 %format <*> = "\mathop{{\langle}{*}{\rangle}}"
 %format ^ = "\string^\hspace{-.2ex}"
