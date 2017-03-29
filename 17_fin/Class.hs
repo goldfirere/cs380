@@ -1,13 +1,14 @@
 {-# LANGUAGE TypeOperators, TypeInType, GADTs, TypeFamilies,
              UndecidableInstances, AllowAmbiguousTypes, ScopedTypeVariables,
-             TypeApplications #-}
+             TypeApplications, StandaloneDeriving #-}
 
-module Class where
+module Main where
 
 import Data.Kind ( Type )
-import Prelude hiding ( (++), concat, length )
+import Prelude hiding ( (++), concat, length, (!!), reverse, filter )
 import qualified Prelude
 import Data.Type.Equality
+import Text.Read ( readMaybe )
 
 data Nat where
   Zero :: Nat
@@ -21,6 +22,8 @@ data Vec :: Nat -> Type -> Type where
   Nil :: Vec Zero a
   (:>) :: a -> Vec n a -> Vec (Succ n) a
 infixr 5 :>
+
+deriving instance Show a => Show (Vec n a)
 
 (++) :: Vec n a -> Vec m a -> Vec (n + m) a
 Nil ++ v2 = v2
@@ -56,12 +59,11 @@ infixr 5 :>>
 
 type family Sum ns where
   Sum '[]      = Zero
-  Sum (n : ns) = Sum ns + n
+  Sum (n : ns) = n + Sum ns
 
 concat :: VecList ns a -> Vec (Sum ns) a
 concat VLNil = Nil
-concat (xs :>> xss)
-  = case plus_comm (length xs) (length (concat xss)) of Refl -> xs ++ concat xss
+concat (xs :>> xss) = xs ++ concat xss
 
 length :: Vec n a -> SNat n
 length Nil = SZero
@@ -73,7 +75,7 @@ data SNat :: Nat -> Type where
 
 plus_zero :: SNat n -> n + Zero :~: n
 plus_zero SZero      = Refl
-plus_zero (SSucc n') = {- case plus_zero n' of Refl -> -} Refl
+plus_zero (SSucc n') = case plus_zero n' of Refl -> Refl
 
 plus_succ :: forall m n. SNat n -> (n + Succ m) :~: Succ (n + m)
 plus_succ SZero      = Refl
@@ -84,3 +86,81 @@ plus_comm SZero                    sm = case plus_zero sm of Refl -> Refl
 plus_comm (SSucc (sn' :: SNat n')) sm
 --  = case plus_succ @n' sm of Refl -> case plus_comm sn' sm of Refl -> Refl
   = case plus_comm sn' sm of Refl -> case plus_succ @n' sm of Refl -> Refl
+
+type family Replicate (n :: Nat) (x :: a) :: [a] where
+  Replicate Zero     _ = '[]
+  Replicate (Succ n) x = x ': Replicate n x
+
+explode :: Vec n a -> VecList (Replicate n (Succ Zero)) a
+explode Nil       = VLNil
+explode (x :> xs) = (x :> Nil) :>> explode xs
+
+data Fin :: Nat -> Type where
+  FZero :: Fin (Succ n)
+  FSucc :: Fin n -> Fin (Succ n)
+
+(!!) :: Vec n a -> Fin n -> a
+vec !! fin = case (fin, vec) of
+  (FZero,   x :> _)  -> x
+  (FSucc n, _ :> xs) -> xs !! n
+
+{-
+terrible :: Fin n -> Vec n a -> a
+terrible FZero     (x :> _)  = x
+terrible (FSucc n) (_ :> xs) = terrible n xs
+-}
+
+{-
+(!!!) :: Vec (Succ n) a -> Fin (Succ n) -> a
+(x :> _) !!! FZero = x
+(_ :> xs) !!! (FSucc n) = xs !!! n
+
+no_fin_zero ::
+-}
+
+-- toFin :: Int -> Fin n
+
+data EVec :: (Nat -> Type) -> Type -> Type where
+  EVec :: proof n -> Vec n a -> EVec proof a
+
+data AlwaysTrue :: Nat -> Type where
+  Always :: AlwaysTrue n
+
+toVec :: [a] -> EVec AlwaysTrue a   --  toVec :: [a] -> Vec n a
+                         --  toVec :: [a] -> (exists n. Vec n a)
+toVec [] = EVec Always Nil
+toVec (x:xs) = case toVec xs of
+  EVec _ ys -> EVec Always (x :> ys)
+
+snoc :: Vec n a -> a -> Vec (Succ n) a
+snoc Nil x = x :> Nil
+snoc (y :> ys) x = y :> snoc ys x
+
+reverse :: Vec n a -> Vec n a
+reverse Nil = Nil
+reverse (x :> xs) = snoc (reverse xs) x
+
+
+main = do
+  nums <- readInNumbers
+  case toVec nums of EVec _ xs -> print (reverse xs)
+
+readInNumbers :: IO [Integer]
+readInNumbers = do
+  line <- getLine
+  case readMaybe line of
+    Nothing -> return []
+    Just n  -> do
+      more_nums <- readInNumbers
+      return (n : more_nums)
+
+filter :: (a -> Bool) -> Vec n a -> EVec AlwaysTrue a
+filter _ Nil       = EVec Always Nil
+filter f (x :> xs) = case filter f xs of
+  EVec _ fxs -> if f x then EVec Always (x :> fxs)
+                else EVec Always fxs
+
+-- badfilter :: (a -> Bool) -> Vec n a -> Vec m a
+-- badfilter _ Nil       = Nil
+-- badfilter f (x :> xs) = case filter f xs of EVec fxs -> if f x then EVec (x :> fxs)
+--                                                            else EVec fxs

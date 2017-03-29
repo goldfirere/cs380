@@ -143,7 +143,7 @@ represents my aims.
 |   |     |                    |                |                 |                    |                    |[html][ht152]      |
 |   |     |                    |                |                 |                    |                    |[lhs][lhs152]      |
 +---+-----+--------------------+----------------+-----------------+--------------------+--------------------+-------------------+
-|17 |3/29 | * `Fin`            |                |                 | [Assignment 7] out |                    |                   |
+|17 |3/29 | * `Fin`            |                | [Class.hs][c17] | [Assignment 7] out |                    |                   |
 |   |     | * Existentials     |                |                 |(part of portfolio) |                    |                   |
 |   |     | * Implicits        |                |                 |                    |                    |                   |
 |   |     |                    |                |                 |                    |                    |                   |
@@ -246,3 +246,4 @@ represents my aims.
 [Assignment 6]: hw06/hw06.html
 [c16]: 16/Class.hs
 [Assignment 7]: hw07/hw07.html
+[c17]: 17/Class.hs
