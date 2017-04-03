@@ -73,10 +73,10 @@ data SNat :: Nat -> Type where
 
 plus_zero :: SNat n -> n + Zero :~: n
 plus_zero SZero      = Refl
-plus_zero (SSucc n') = {- case plus_zero n' of Refl -> -} Refl
+plus_zero (SSucc n') = case plus_zero n' of Refl -> Refl
 
 plus_succ :: forall m n. SNat n -> (n + Succ m) :~: Succ (n + m)
-plus_succ SZero      = Refl
+plus_succ SZero       = Refl
 plus_succ (SSucc sn') = case plus_succ @m sn' of Refl -> Refl
 
 plus_comm :: SNat n -> SNat m -> n + m :~: m + n
