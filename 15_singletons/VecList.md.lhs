@@ -9,6 +9,7 @@ As usual, this is a Literate Haskell file, with the obligatory header:
 
 > {-# LANGUAGE StandaloneDeriving, TypeInType, TypeOperators, GADTs,
 >              TypeFamilies, UndecidableInstances #-}
+> {-# OPTIONS_GHC -Wincomplete-patterns #-}
 
 > module VecList where
 

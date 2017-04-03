@@ -143,12 +143,13 @@ represents my aims.
 |   |     |                    |                |                 |                    |                    |[html][ht152]      |
 |   |     |                    |                |                 |                    |                    |[lhs][lhs152]      |
 +---+-----+--------------------+----------------+-----------------+--------------------+--------------------+-------------------+
-|17 |3/29 | * `Fin`            |                | [Class.hs][c17] | [Assignment 7] out |                    |                   |
-|   |     | * Existentials     |                |                 |(part of portfolio) |                    |                   |
-|   |     | * Implicits        |                |                 |                    |                    |                   |
-|   |     |                    |                |                 |                    |                    |                   |
-|   |     |                    |                |                 |                    |                    |                   |
-|   |     |                    |                |                 |                    |                    |                   |
+|17 |3/29 | * `Fin`            |                | [Class.hs][c17] | [Assignment 7] out |                    | * `Fin` lecture   |
+|   |     | * Existentials     |                |                 |(part of portfolio) |                    |notes [html][htfin]|
+|   |     | * Implicits        |                |                 |                    |                    |[lhs][lhsfin]      |
+|   |     |                    |                |                 |                    |                    | * Existentials    |
+|   |     |                    |                |                 |                    |                    |lecture notes      |
+|   |     |                    |                |                 |                    |                    |[html][htex]       |
+|   |     |                    |                |                 |                    |                    |[lhs][lhsex]       |
 +---+-----+--------------------+----------------+-----------------+--------------------+--------------------+-------------------+
 |18 |4/3  |                    |                |                 |                    |                    |                   |
 |   |     |                    |                |                 |                    |                    |                   |
@@ -247,3 +248,7 @@ represents my aims.
 [c16]: 16/Class.hs
 [Assignment 7]: hw07/hw07.html
 [c17]: 17/Class.hs
+[htfin]: 17/Fin.html
+[lhsfin]: 17/Fin.md.lhs
+[htex]: 17/Existentials.html
+[lhsex]: 17/Existentials.md.lhs
