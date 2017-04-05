@@ -2,7 +2,7 @@ TEXS := $(wildcard [0-9][0-9]_*/*.tex)
 LHSS := $(filter-out $(wildcard [0-9][0-9]_*/*.md.lhs),$(wildcard [0-9][0-9]_*/*.lhs)) $(wildcard private/quizzes/*.lhs) $(wildcard exams/*.lhs)
 PDFS := $(TEXS:%.tex=%.pdf) $(LHSS:%.lhs=%.pdf)
 
-HWS = 01/Intro.hs
+HWS = 01/Intro.hs 08/Halgebra.hs 08/Main.hs 08/Parser.hs 08/Arith.hs 08/LArith.hs
 STUBS = $(HWS:%=hw/%)
 
 FMTS = etc/rae.fmt

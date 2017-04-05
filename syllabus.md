@@ -146,20 +146,20 @@ represents my aims.
 |17 |3/29 | * `Fin`            |                | [Class.hs][c17] | [Assignment 7] out |                    | * `Fin` lecture   |
 |   |     | * Existentials     |                |                 |(part of portfolio) |                    |notes [html][htfin]|
 |   |     | * Implicits        |                |                 |                    |                    |[lhs][lhsfin]      |
-|   |     |                    |                |                 |                    |                    | * Existentials    |
-|   |     |                    |                |                 |                    |                    |lecture notes      |
-|   |     |                    |                |                 |                    |                    |[html][htex]       |
-|   |     |                    |                |                 |                    |                    |[lhs][lhsex]       |
+|   |     |                    |                |                 |                    |                    |                   |
+|   |     |                    |                |                 |                    |                    |                   |
+|   |     |                    |                |                 |                    |                    |                   |
+|   |     |                    |                |                 |                    |                    |                   |
 +---+-----+--------------------+----------------+-----------------+--------------------+--------------------+-------------------+
-|18 |4/3  | * Existential      |                | *               |                    |                    |                   |
-|   |     |properties          |                |[Class.hs][c18]  |                    |                    |                   |
-|   |     | * `Maybe` monad    |                | *               |                    |                    |                   |
-|   |     |                    |                |[MaybeMonad.hs]  |                    |                    |                   |
+|18 |4/3  | * Existential      |                | *               |                    |                    | * Existentials    |
+|   |     |properties          |                |[Class.hs][c18]  |                    |                    |lecture notes      |
+|   |     | * `Maybe` monad    |                | *               |                    |                    |[html][htex]       |
+|   |     |                    |                |[MaybeMonad.hs]  |                    |                    |[lhs][lhsex]       |
 |   |     |                    |                | *               |                    |                    |                   |
 |   |     |                    |                |[ClassOrdList.hs]|                    |                    |                   |
 +---+-----+--------------------+----------------+-----------------+--------------------+--------------------+-------------------+
-|19 |4/5  |                    |                |                 |                    |                    |                   |
-|   |     |                    |                |                 |                    |                    |                   |
+|19 |4/5  | * `OrdList`        |                |                 | [Assignment 8] out |                    |                   |
+|   |     |                    |                |                 |(part of portfolio) |                    |                   |
 |   |     |                    |                |                 |                    |                    |                   |
 |   |     |                    |                |                 |                    |                    |                   |
 |   |     |                    |                |                 |                    |                    |                   |
@@ -256,3 +256,4 @@ represents my aims.
 [c18]: 18/Class.hs
 [MaybeMonad.hs]: 18/MaybeMonad.hs
 [ClassOrdList.hs]: 18/ClassOrdList.hs
+[Assignment 8]: hw08/hw08.html
