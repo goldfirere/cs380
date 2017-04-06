@@ -155,11 +155,11 @@ represents my aims.
 |   |     |properties          |                |[Class.hs][c18]  |                    |                    |lecture notes      |
 |   |     | * `Maybe` monad    |                | *               |                    |                    |[html][htex]       |
 |   |     |                    |                |[MaybeMonad.hs]  |                    |                    |[lhs][lhsex]       |
-|   |     |                    |                | *               |                    |                    |                   |
-|   |     |                    |                |[ClassOrdList.hs]|                    |                    |                   |
+|   |     |                    |                |                 |                    |                    |                   |
+|   |     |                    |                |                 |                    |                    |                   |
 +---+-----+--------------------+----------------+-----------------+--------------------+--------------------+-------------------+
-|19 |4/5  | * `OrdList`        |                |                 | [Assignment 8] out |                    |                   |
-|   |     |                    |                |                 |(part of portfolio) |                    |                   |
+|19 |4/5  | * `OrdList`        |                | *               | [Assignment 8] out |                    |                   |
+|   |     |                    |                |[ClassOrdList.hs]|(part of portfolio) |                    |                   |
 |   |     |                    |                |                 |                    |                    |                   |
 |   |     |                    |                |                 |                    |                    |                   |
 |   |     |                    |                |                 |                    |                    |                   |
@@ -255,5 +255,5 @@ represents my aims.
 [lhsex]: 17/Existentials.md.lhs
 [c18]: 18/Class.hs
 [MaybeMonad.hs]: 18/MaybeMonad.hs
-[ClassOrdList.hs]: 18/ClassOrdList.hs
+[ClassOrdList.hs]: 19/ClassOrdList.hs
 [Assignment 8]: hw08/hw08.html

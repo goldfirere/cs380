@@ -173,3 +173,16 @@ filter f (x :> xs) = case filter f xs of
 -- badfilter _ Nil       = Nil
 -- badfilter f (x :> xs) = case filter f xs of EVec fxs -> if f x then EVec (x :> fxs)
 --                                                            else EVec fxs
+
+gteRefl :: SNat n -> n :>=: n
+gteRefl SZero     = GTEZero
+gteRefl (SSucc m) = GTESucc (gteRefl m)
+
+gteRefl' :: Vec n a -> n :>=: n
+gteRefl' Nil = GTEZero
+gteRefl' (_ :> xs) = GTESucc (gteRefl' xs)
+
+tail :: Vec n a -> EVec ((:>=:) n) a
+tail Nil = EVec GTEZero Nil
+-- tail (_ :> xs) = EVec (gteSuccLeft (gteRefl (length xs))) xs
+tail (_ :> xs) = EVec (gteSuccLeft (gteRefl' xs)) xs
