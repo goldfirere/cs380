@@ -18,10 +18,10 @@ when the user enters in something other than a positive number.
 
 2. Implement the following utilities in Haskell:
 
-  a. `cat`
-  b. `echo`
-  c. `ls`, with its `-F` option
-  d. `cp`
+    a. `cat`
+    b. `echo`
+    c. `ls`, with its `-F` option
+    d. `cp`
 
 3. (Challenge) Ponder how to take your solution to (1) and add fancy types to it. Note that prime factorization has
 a simple specification: it takes a number and produces a list of numbers, each of which is prime and the product of

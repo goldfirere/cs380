@@ -143,6 +143,7 @@ This paper, to be handed in on hard copy and uploaded to Gradescope by May 1, wi
 the experience of learning a typed, functional language. (It does not have to relate to the rest of
 your project, specifically.) Contrast Haskell with other language(s) you know, letting these questions
 guide you:
+
  * What is good in Haskell?
  * What is bad in Haskell?
  * Have you gained insight into programming in more traditional language by working
