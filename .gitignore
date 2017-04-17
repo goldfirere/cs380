@@ -11,3 +11,4 @@ _site
 *.synctex.gz
 *.fls
 *.ptb
+*.hs.pdf
