@@ -181,8 +181,9 @@ represents my aims.
 |   |     |                    |                |[Parser.hs][pa22] |                    |                    |                   |
 |   |     |                    |                | * [Eval.hs][ev22]|                    |                    |                   |
 +---+-----+--------------------+----------------+------------------+--------------------+--------------------+-------------------+
-|23 |4/19 | * Review           |                | * [Pong.hs]      | Final project      |                    |                   |
-|   |     |                    |                |                  |proposal due        |                    |                   |
+|23 |4/19 | * Review           |                | * [Pong.hs]      | Final project      |                    | * [Practice Exam  |
+|   |     |                    |                |                  |proposal due        |                    |2]                 |
+|   |     |                    |                |                  |                    |                    | * [Exam2.hs]      |
 +---+-----+--------------------+----------------+------------------+--------------------+--------------------+-------------------+
 |24 |4/24 |                    |                |                  |                    |                    |                   |
 |   |     | **Exam 2**         |                |                  |                    |                    |                   |
@@ -271,3 +272,5 @@ represents my aims.
 [pa22]: 22/Parser.hs
 [ev22]: 22/Eval.hs
 [Pong.hs]: 22/Pong.hs
+[Practice Exam 2]: 23/exam2-practice.pdf
+[Exam2.hs]: 23/Exam2.hs
