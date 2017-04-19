@@ -7,7 +7,7 @@ module Eval where
 
 import Control.Monad ( when )
 
-import Nat
+import NatVec
 import Arith
 import Parser   -- just for ease of us in GHCi
 
@@ -75,6 +75,7 @@ evalTermR (Div a b) = do
 evalTermR (Factor f) = evalFactorR f
 
 evalFactorR :: Factor n -> Reader (Vec n Double) Double
+-- evalFactorR :: Factor n -> (Vec n Double -> Double)
 evalFactorR (Lit n) = return (fromInteger n)
 evalFactorR (Var fin) = do
   env <- get
@@ -113,10 +114,13 @@ evalSumC e (Plus a b) = do
   when (a' == 0 || b' == 0) count
   return (a' + b')
 evalSumC e (Minus a b) = do
-  a' <- evalSumC e a
-  b' <- evalSumC e b
-  when (b' == 0) count
-  return (a' - b')
+  {
+    a' <- evalSumC e a;
+    b' <- evalSumC e b;
+    when (b' == 0)
+      count;
+    return (a' - b');
+  }
 evalSumC e (Term a) = evalTermC e a
 
 evalTermC :: Vec n Double -> Term n -> Counter Double

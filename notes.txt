@@ -38,3 +38,10 @@ Brent's PL course may be relevant: http://ozark.hendrix.edu/~yorgey/360/f16/
 
 
 Rummikub as inspiration for assignment??
+
+----------------------
+NEXT TIME
+
+- more practical Haskell
+- perhaps this will be facilitated by having 245 as a prereq. (Will Dave's suffice??)
+- or maybe just a faster-paced first half. I think some students were bored then.

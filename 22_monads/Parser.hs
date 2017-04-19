@@ -14,7 +14,7 @@ import Text.Parsec.Token
 import Text.Parsec.Language
 
 import Arith
-import Nat
+import NatVec
 
 type Parser = Parsec String ()
 
