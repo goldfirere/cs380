@@ -192,9 +192,10 @@ represents my aims.
 |   |     |                    |                |                  |                    |                    |                   |
 +---+-----+--------------------+----------------+------------------+--------------------+--------------------+-------------------+
 |25 |4/26 | * Functional       |                |                  |                    |                    |                   |
-|   |     |programming in Java |                |                  |                    |                    |                   |
-|   |     |                    |                |                  |                    |                    |                   |
-|   |     |                    |                |                  |                    |                    |                   |
+|   |     |programming in Java |                |                  |                    |                    | * Java lecture    |
+|   |     |                    |                |                  |                    |                    |notes [html][htj]  |
+|   |     |                    |                |                  |                    |                    |[lhs][lhsj]        |
+|   |     |                    |                |                  |                    |                    |[java][jj]         |
 +---+-----+--------------------+----------------+------------------+--------------------+--------------------+-------------------+
 
 **Monday, May 1, 2:00-5:00, Park 229:** Project presentations.
@@ -277,3 +278,6 @@ represents my aims.
 [Exam2.hs]: 23/Exam2.hs
 [Exam2-sol.hs]: 23/Exam2-sol.hs
 [e24]: 24/Exam2.hs
+[htj]: 25/Java.html
+[lhsj]: 25/Java.md.lhs
+[jj]: 25/Haskell.java

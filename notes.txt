@@ -42,6 +42,17 @@ Rummikub as inspiration for assignment??
 ----------------------
 NEXT TIME
 
-- more practical Haskell
+- more practical Haskell (!)
 - perhaps this will be facilitated by having 245 as a prereq. (Will Dave's suffice??)
 - or maybe just a faster-paced first half. I think some students were bored then.
+
+
+- more explanation of how types work (typing rules!)
+- comparison to other languages (dependent types / other FP langs)
+   - perhaps earlier comparison to Java
+- explain that fancy types are optional
+
+- good to have homework with many small problems
+
+- learn proofs once we know how to encode them in Haskell
+- perhaps less proof-writing in first half of semester

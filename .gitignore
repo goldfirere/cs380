@@ -12,3 +12,4 @@ _site
 *.fls
 *.ptb
 *.hs.pdf
+*.class
