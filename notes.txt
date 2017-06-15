@@ -56,3 +56,31 @@ NEXT TIME
 
 - learn proofs once we know how to encode them in Haskell
 - perhaps less proof-writing in first half of semester
+
+- spend more time talking about running ghc & cabal & stack
+- consider putting the final project in the *middle* of the semester
+
+- much more time on practical haskell: maybe have the first half
+  of the semester involve more traditional programs, instead of
+  avoiding IO at all costs. The language is strange enough as it
+  is, no need to make our workflow strange too.
+
+- Teach about operating ghc, langauge extensions, the GHC manual,
+  etc.
+- -fdefer-type-errors
+- -Wall
+
+- Show students about `trace`? Probably. But they will lose
+  points if they submit their work with it!
+
+- Make sure to make time for larger verified programs. Vec just isn't all that motivating.
+
+- NO NO NO farmer's market assignment. RESIST THE TEMPTATION!
+  Why? If for no other reason, it's a terrible, artificial use
+  of classes.z
+
+----
+more typey resources:
+- http://www.parsonsmatt.org/2017/04/26/basic_type_level_programming_in_haskell.html
+- https://www.schoolofhaskell.com/user/konn/prove-your-haskell-for-great-safety/dependent-types-in-haskell
+
