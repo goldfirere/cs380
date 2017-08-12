@@ -132,7 +132,7 @@ College schedule as a final exam. It is *not* a final exam!) These presentations
 high-octane -- you will share what you've learned and show off some of your code. If you
 want a slide or two, that's great, but the focus will be on the code, not on the polish.
 
-You can choose to complete the final exam with up to one partner. Both students will work
+You can choose to complete the final project with up to one partner. Both students will work
 together on the entire project and receive the same grade. (You will see below that there
 is a three-assignment limitation to partners. This does *not* apply to the final project.)
 
